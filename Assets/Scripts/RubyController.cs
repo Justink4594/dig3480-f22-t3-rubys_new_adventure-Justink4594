@@ -16,10 +16,9 @@ public class RubyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float horizontal = Input.GetAxis("Horizontal");
-        Debug.Log(horizontal);
-        float vertical = Input.GetAxis("Vertical");
-        Debug.Log(vertical);
+        horizontal = Input.GetAxis("Horizontal");
+        vertical = Input.GetAxis("Vertical");
+
     }
 
     void FixedUpdate()
