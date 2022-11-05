@@ -7,7 +7,7 @@ public class RubyController : MonoBehaviour
     Rigidbody2D rigidbody2d;
     float horizontal;
     float vertical;
-    
+
     void Start()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
@@ -20,9 +20,14 @@ public class RubyController : MonoBehaviour
         Debug.Log(horizontal);
         float vertical = Input.GetAxis("Vertical");
         Debug.Log(vertical);
+    }
+
+    void FixedUpdate()
+    {
         Vector2 position = transform.position;
         position.x = position.x + 3.0f * horizontal * Time.deltaTime;
         position.y = position.y + 3.0f * vertical * Time.deltaTime;
-        transform.position = position;
+
+        rigidbody2d.MovePosition(position);
     }
 }
