@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour
 {
     public float speed;
+    public bool vertical;
 
     Rigidbody2D rigidbody2D;
 
@@ -17,7 +18,15 @@ public class EnemyController : MonoBehaviour
     void FixedUpdate()
     {
         Vector2 position = rigidbody2D.position;
-        position.x = position.x + Time.deltaTime * speed;
+
+        if (vertical)
+        {
+            position.y = position.y + Time.deltaTime * speed;
+        }
+        else
+        {
+            position.x = position.x + Time.deltaTime * speed;
+        }
 
         rigidbody2D.MovePosition(position);
     }
