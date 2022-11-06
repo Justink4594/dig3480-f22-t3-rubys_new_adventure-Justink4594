@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
-    public float speed;
+    public float speed = 3.0f;
     public bool vertical;
+    public float changetime = 3.0f;
 
     Rigidbody2D rigidbody2D;
 
