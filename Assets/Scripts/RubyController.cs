@@ -17,11 +17,13 @@ public class RubyController : MonoBehaviour
 
     bool isInvincible;
     float invincibleTimer;
+    Animator animator;
+    Vector2 lookDirection = new Vector2(1, 0);
 
     void Start()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
-
+        animator = GetComponent<Animator>();
         currentHealth = maxHealth;
     }
 
