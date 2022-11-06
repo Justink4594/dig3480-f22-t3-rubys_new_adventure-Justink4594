@@ -5,6 +5,7 @@ using UnityEngine;
 public class RubyController : MonoBehaviour
 {
     public float speed = 3.0f;
+    public float timeInvincible = 2.0f;
 
     public int maxHealth = 5;
     public int health { get { return currentHealth; } }
@@ -13,6 +14,9 @@ public class RubyController : MonoBehaviour
     Rigidbody2D rigidbody2d;
     float horizontal;
     float vertical;
+
+    bool isInvincible;
+    float invincibleTimer;
 
     void Start()
     {
