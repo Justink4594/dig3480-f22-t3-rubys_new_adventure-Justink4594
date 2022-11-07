@@ -10,9 +10,15 @@ public class Projectile : MonoBehaviour
         rigidbody2d = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
-    void Update()
+
+    public void Launch(Vector2 direction, float force)
     {
-        
+        rigidbody2d.AddForce(direction * force);
+    }
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        Debug.Log("Projectile Collision with " + other.gameObject);
+        Destroy(gameObject);
     }
 }
