@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    // Start is called before the first frame update
+    Rigidbody2D rigidbody2D;
+
     void Start()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
