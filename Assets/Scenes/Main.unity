@@ -12150,6 +12150,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5019827774740076898, guid: 836651b65cede1e498358cbfaedb6069, type: 3}
+      propertyPath: vertical
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5650931727211916533, guid: 836651b65cede1e498358cbfaedb6069, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -13762,6 +13766,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5019827774740076898, guid: 836651b65cede1e498358cbfaedb6069, type: 3}
+      propertyPath: vertical
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5568210892884055209, guid: 836651b65cede1e498358cbfaedb6069, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5650931727211916533, guid: 836651b65cede1e498358cbfaedb6069, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -14086,6 +14098,10 @@ PrefabInstance:
     - target: {fileID: 4943863848961638521, guid: 836651b65cede1e498358cbfaedb6069, type: 3}
       propertyPath: m_Name
       value: Enemy (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5019827774740076898, guid: 836651b65cede1e498358cbfaedb6069, type: 3}
+      propertyPath: vertical
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5650931727211916533, guid: 836651b65cede1e498358cbfaedb6069, type: 3}
       propertyPath: m_RootOrder
