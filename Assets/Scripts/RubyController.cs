@@ -22,6 +22,7 @@ public class RubyController : MonoBehaviour
     float vertical;
 
     Animator animator;
+    AudioSource audioSource;
     Vector2 lookDirection = new Vector2(1, 0);
 
     // Start is called before the first frame update
@@ -31,6 +32,8 @@ public class RubyController : MonoBehaviour
         animator = GetComponent<Animator>();
 
         currentHealth = maxHealth;
+
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame

@@ -11321,7 +11321,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &407980536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15403,6 +15403,10 @@ PrefabInstance:
       propertyPath: dialogBox
       value: 
       objectReference: {fileID: 407980535}
+    - target: {fileID: 3017210233749366534, guid: e13068571e761c14ab6283439040812a, type: 3}
+      propertyPath: displayTime
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7930740208449904958, guid: e13068571e761c14ab6283439040812a, type: 3}
       propertyPath: m_RootOrder
       value: 16
