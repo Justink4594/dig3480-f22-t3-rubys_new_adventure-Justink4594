@@ -35,6 +35,10 @@ public class RubyController : MonoBehaviour
 
         audioSource = GetComponent<AudioSource>();
     }
+    public void PlaySound(AudioClip clip)
+    {
+        audioSource.PlayOneShot(clip);
+    }
 
     // Update is called once per frame
     void Update()
