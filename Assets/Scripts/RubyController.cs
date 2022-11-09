@@ -70,6 +70,7 @@ public class RubyController : MonoBehaviour
             {
                 Debug.Log("Raycast has hit the object " + hit.collider.gameObject);
             }
+        }
     }
 
     void FixedUpdate()
