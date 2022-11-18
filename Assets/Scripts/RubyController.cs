@@ -29,6 +29,8 @@ public class RubyController : MonoBehaviour
 
     AudioSource audioSource;
 
+    public ParticleSystem 
+    public ParticleSystem 
     // Start is called before the first frame update
     void Start()
     {
