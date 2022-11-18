@@ -104,6 +104,8 @@ MonoBehaviour:
   speed: 3
   maxHealth: 5
   projectilePrefab: {fileID: 7710635367995824413, guid: 995f3440ae65a9b48bf22cac784a99a1, type: 3}
+  throwSound: {fileID: 0}
+  hitSound: {fileID: 0}
   timeInvincible: 2
 --- !u!50 &3818096174645901213
 Rigidbody2D:
@@ -184,7 +186,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
