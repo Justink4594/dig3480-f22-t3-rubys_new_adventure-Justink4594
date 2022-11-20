@@ -110,7 +110,7 @@ public class RubyController : MonoBehaviour
             PlaySound(hitSound);
         }
 
-        if (amount < 0)
+        if (amount > 0)
         {
             GameObject projectileObject = Instantiate(HealthIncrease, rigidbody2d.position + Vector2.up * 0.5f, Quaternion.identity);
         }
