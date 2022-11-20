@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class RubyController : MonoBehaviour
 {
@@ -44,6 +45,9 @@ public class RubyController : MonoBehaviour
         currentHealth = maxHealth;
 
         audioSource = GetComponent<AudioSource>();
+
+        SetCountText();
+        winTextObject.SetActive(false);
     }
 
     // Update is called once per frame
