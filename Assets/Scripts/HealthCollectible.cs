@@ -5,7 +5,7 @@ using UnityEngine;
 public class HealthCollectible : MonoBehaviour
 {
     public AudioClip collectedClip;
-    public 
+    public ParticleSystem HealthIncrease;
 
 
     void OnTriggerEnter2D(Collider2D other)
