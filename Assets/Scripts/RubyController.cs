@@ -6,8 +6,16 @@ using TMPro;
 
 public class RubyController : MonoBehaviour
 {
+    Rigidbody2D rigidbody2d;
+    float horizontal;
+    float vertical;
     public float speed = 3.0f;
     public int maxHealth = 5;
+    public float timeInvincible = 2.0f;
+    bool isInvincible;
+    float invincibleTimer;
+
+    AudioSource audioSource;
     public GameObject projectilePrefab;
     public AudioClip throwSound;
     public AudioClip hitSound;
@@ -15,26 +23,18 @@ public class RubyController : MonoBehaviour
     public int health { get { return currentHealth; } }
     int currentHealth;
 
-    public float timeInvincible = 2.0f;
-    bool isInvincible;
-    float invincibleTimer;
-
-    Rigidbody2D rigidbody2d;
-    float horizontal;
-    float vertical;
-
     Animator animator;
     Vector2 lookDirection = new Vector2(1, 0);
 
-    AudioSource audioSource;
-
     public GameObject HealthIncrease;
     public GameObject HealthDecrease;
-    public TextMeshProUGUI CountText;
+
+    public TextMeshProUGUI countText;
     private int count;
     public GameObject winTextObject;
     public GameObject loseTextObject;
-    // Start is called before the first frame update
+
+
     void Start()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
@@ -48,7 +48,6 @@ public class RubyController : MonoBehaviour
         winTextObject.SetActive(false);
     }
 
-    // Update is called once per frame
     void Update()
     {
         horizontal = Input.GetAxis("Horizontal");
@@ -140,5 +139,14 @@ public class RubyController : MonoBehaviour
     public void PlaySound(AudioClip clip)
     {
         audioSource.PlayOneShot(clip);
+    }
+
+    void SetCountText()
+    {
+        countText.text = ":Robots Fixed" + count.ToString();
+        if (count = 5)
+        {
+            winTextObject.SetActive(true);
+        }
     }
 }
