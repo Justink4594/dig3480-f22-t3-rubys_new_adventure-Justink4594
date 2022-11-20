@@ -29,8 +29,8 @@ public class RubyController : MonoBehaviour
 
     AudioSource audioSource;
 
-    public GameObject HealthIncrease;
-    public GameObject HealthDecrease;
+    public ParticleSystem HealthIncrease;
+    public ParticleSystem HealthDecrease;
 
     // Start is called before the first frame update
     void Start()
