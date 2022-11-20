@@ -98,7 +98,7 @@ public class RubyController : MonoBehaviour
 
     public void ChangeHealth(int amount)
     {
-        if (amount < 0)
+        if (amount -1 < 5)
         {
             if (isInvincible)
                 return;

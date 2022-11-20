@@ -331,7 +331,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7990840416554926907, guid: 86525488121fc754e97526c8fdd4d4f3, type: 3}
       propertyPath: playOnAwake
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7990840416554926907, guid: 86525488121fc754e97526c8fdd4d4f3, type: 3}
       propertyPath: moveWithTransform
@@ -366,7 +366,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1047109335411221462, guid: 820fdfa942d11b74db0b6df94982cfd9, type: 3}
       propertyPath: playOnAwake
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1047109335411221462, guid: 820fdfa942d11b74db0b6df94982cfd9, type: 3}
       propertyPath: moveWithTransform
