@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 using TMPro;
 
 public class RubyController : MonoBehaviour
@@ -144,7 +143,7 @@ public class RubyController : MonoBehaviour
     void SetCountText()
     {
         countText.text = ":Robots Fixed" + count.ToString();
-        if (count = 5)
+        if (count >= 5)
         {
             winTextObject.SetActive(true);
         }
