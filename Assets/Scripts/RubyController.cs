@@ -41,9 +41,6 @@ public class RubyController : MonoBehaviour
         currentHealth = maxHealth;
 
         audioSource = GetComponent<AudioSource>();
-
-        set.HealthIncrease = false;
-        set.HealthDecrease = false;
     }
 
     // Update is called once per frame
