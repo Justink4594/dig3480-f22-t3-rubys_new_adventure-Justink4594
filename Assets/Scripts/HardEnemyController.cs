@@ -8,7 +8,7 @@ public class HardEnemyController : MonoBehaviour
     public bool vertical;
     public float changeTime = 3.0f;
 
-    public ParticleSystem smokeEffect;
+    public ParticleSystem SmokeEffect;
 
     Rigidbody2D rigidbody2D;
     float timer;
@@ -84,7 +84,7 @@ public class HardEnemyController : MonoBehaviour
         //optional if you added the fixed animation
         animator.SetTrigger("Fixed");
 
-        smokeEffect.Stop();
+        SmokeEffect.Stop();
     }
 }
 
