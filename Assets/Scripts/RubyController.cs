@@ -98,7 +98,7 @@ public class RubyController : MonoBehaviour
 
     public void ChangeHealth(int amount)
     {
-        if (amount < 0)
+        if (amount )
         {
             if (isInvincible)
                 return;
@@ -110,7 +110,7 @@ public class RubyController : MonoBehaviour
             PlaySound(hitSound);
         }
 
-        if (amount + 1 < 5)
+        if (amount )
         {
             GameObject projectileObject = Instantiate(HealthIncrease, rigidbody2d.position + Vector2.up * 0.5f, Quaternion.identity);
         }
