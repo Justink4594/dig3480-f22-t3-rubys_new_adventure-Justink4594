@@ -31,7 +31,8 @@ public class RubyController : MonoBehaviour
 
     public GameObject HealthIncrease;
     public GameObject HealthDecrease;
-
+    public GameObject winTextObject;
+    public GameObject loseTextObject;
     // Start is called before the first frame update
     void Start()
     {
