@@ -30,7 +30,7 @@ public class RubyController : MonoBehaviour
     AudioSource audioSource;
 
     public ParticleSystem HealthIncrease;
-    public ParticleSystem HealthDecrease;
+    public ParticleSystem Damage;
 
     // Start is called before the first frame update
     void Start()
@@ -105,7 +105,7 @@ public class RubyController : MonoBehaviour
 
             isInvincible = true;
             invincibleTimer = timeInvincible;
-            ParticleSystem  = Instantiate(HealthDecrease, rigidbody2d.position + Vector2.up * 0.5f, Quaternion.identity);
+            ParticleSystem HealthDecrease = Instantiate(HealthDecrease, rigidbody2d.position + Vector2.up * 0.5f, Quaternion.identity);
 
             PlaySound(hitSound);
         }
