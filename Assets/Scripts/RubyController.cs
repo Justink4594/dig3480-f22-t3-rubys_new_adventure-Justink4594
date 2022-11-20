@@ -105,14 +105,14 @@ public class RubyController : MonoBehaviour
 
             isInvincible = true;
             invincibleTimer = timeInvincible;
-            GameObject projectileObject = Instantiate(HealthDecreasePrefab, rigidbody2d.position + Vector2.up * 0.5f, Quaternion.identity);
+            GameObject projectileObject = Instantiate(HealthDecrease, rigidbody2d.position + Vector2.up * 0.5f, Quaternion.identity);
 
             PlaySound(hitSound);
         }
 
         if (amount > 0)
         {
-            GameObject projectileObject = Instantiate(HealthIncreasePrefab, rigidbody2d.position + Vector2.up * 0.5f, Quaternion.identity);
+            GameObject projectileObject = Instantiate(HealthIncrease, rigidbody2d.position + Vector2.up * 0.5f, Quaternion.identity);
         }
 
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
