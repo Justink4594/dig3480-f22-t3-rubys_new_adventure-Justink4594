@@ -29,8 +29,8 @@ public class RubyController : MonoBehaviour
 
     AudioSource audioSource;
 
-    public ParticleSystem HealthIncrease;
-    public ParticleSystem HealthDecrease;
+    public GameObject HealthIncrease;
+    public GameObject HealthDecrease;
 
     // Start is called before the first frame update
     void Start()
@@ -112,7 +112,7 @@ public class RubyController : MonoBehaviour
 
         if (amount > 0)
         {
-            ParticleSystem HealthIncrease = Instantiate(HealthIncrease, rigidbody2d.position + Vector2.up * 0.5f, Quaternion.identity);
+            GameObject projectileObject = Instantiate(HealthIncrease, rigidbody2d.position + Vector2.up * 0.5f, Quaternion.identity);
         }
 
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
