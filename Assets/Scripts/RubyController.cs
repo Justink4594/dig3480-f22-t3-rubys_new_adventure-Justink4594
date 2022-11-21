@@ -135,6 +135,9 @@ public class RubyController : MonoBehaviour
         {
             GameObject projectileObject = Instantiate(HealthIncrease, rigidbody2d.position + Vector2.up * 0.5f, Quaternion.identity);
         }
+        currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
+
+        UIHealthBar.instance.SetValue(currentHealth / (float)maxHealth);
 
         if (currentHealth <= 1)
         {
@@ -142,9 +145,6 @@ public class RubyController : MonoBehaviour
             gameoverTextObject.SetActive(true);
             speed = 0;
         }
-        currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
-
-        UIHealthBar.instance.SetValue(currentHealth / (float)maxHealth);
     }
 
     void Launch()
