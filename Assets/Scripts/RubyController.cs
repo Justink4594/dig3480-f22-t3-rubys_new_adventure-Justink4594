@@ -143,7 +143,7 @@ public class RubyController : MonoBehaviour
         audioSource.PlayOneShot(clip);
     }
 
-void SetCountText()
+    void SetCountText()
     {
         countText.text = "Robots Fixed:" + count.ToString();
         if (count >= 5)
