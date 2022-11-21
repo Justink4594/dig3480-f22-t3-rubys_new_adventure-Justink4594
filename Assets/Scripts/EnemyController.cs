@@ -78,7 +78,7 @@ public class EnemyController : MonoBehaviour
             player.ChangeHealth(-1);
         }
 
-        if (Proj != null)
+        if (proj != null)
         {
             score += 1;
         }
