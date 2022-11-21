@@ -153,7 +153,7 @@ public class RubyController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("PickUp"))
+        if (other.gameObject.CompareTag(""))
         {
             other.gameObject.SetActive(false);
             count = count + 1;
