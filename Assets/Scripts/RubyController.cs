@@ -46,7 +46,7 @@ public class RubyController : MonoBehaviour
         SetCountText();
         audioSource = GetComponent<AudioSource>();
         winTextObject.SetActive(false);
-        loseTextObject.SetActive(false);
+        gameoverTextObject.SetActive(false);
     }
 
     void Update()
