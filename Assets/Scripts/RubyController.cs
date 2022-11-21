@@ -146,6 +146,11 @@ public class RubyController : MonoBehaviour
     {
         if (scoreAmount > 0)
         currentScore = currentScore + amount;
+    }
 
+
+    void SetCountText()
+    {
+        countText.text = "Robots Fixed:" + count.ToString();
     }
 }
