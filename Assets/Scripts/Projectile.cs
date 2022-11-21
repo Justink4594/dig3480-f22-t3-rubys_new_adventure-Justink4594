@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Projectile : MonoBehaviour
 {
     Rigidbody2D rigidbody2d;
+    public TextMeshProUGUI countText;
 
     void Awake()
     {
