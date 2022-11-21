@@ -49,7 +49,6 @@ public class RubyController : MonoBehaviour
         winTextObject.SetActive(false);
         gameoverTextObject.SetActive(false);
 
-        SetCountText();
     }
 
     void Update()
