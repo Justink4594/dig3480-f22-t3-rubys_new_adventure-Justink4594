@@ -28,7 +28,7 @@ public class RubyController : MonoBehaviour
     public GameObject HealthIncrease;
     public GameObject HealthDecrease;
 
-    public int count = 0;
+    public int count;
     public static int score;
     public TextMeshProUGUI countText;
     public GameObject winTextObject;
