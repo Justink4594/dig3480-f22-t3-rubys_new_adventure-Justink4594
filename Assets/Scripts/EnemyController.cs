@@ -93,12 +93,11 @@ public class EnemyController : MonoBehaviour
     public void OnCollisionEnter2D(Collision2D other)
     {
         RubyController player = other.gameObject.GetComponent<RubyController>();
-
         if (player != null)
         {
             player.ChangeHealth(-1);
         }
-
+        rubyController = rubyControllerObject.GetComponent<RubyController>();
         if (player != null)
         {
             if (controller. < controller.maxHealth)
