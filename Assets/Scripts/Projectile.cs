@@ -41,8 +41,7 @@ public class Projectile : MonoBehaviour
             o.Fix();
             RubyController.score += 1;
         }
-
-
+        
         Destroy(gameObject);
     }
 }
