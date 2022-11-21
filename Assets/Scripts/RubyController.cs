@@ -23,6 +23,7 @@ public class RubyController : MonoBehaviour
     public int health { get { return currentHealth; } }
     int currentHealth;
     int currentScore;
+    bool gameOver;
 
     Animator animator;
     Vector2 lookDirection = new Vector2(1, 0);
@@ -91,7 +92,7 @@ public class RubyController : MonoBehaviour
                 }
             }
         }
-        
+
         if (Input.GetKey(KeyCode.R))
 
         {
