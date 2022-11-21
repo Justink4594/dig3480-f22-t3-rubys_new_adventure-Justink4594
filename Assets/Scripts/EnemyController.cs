@@ -94,7 +94,7 @@ public class EnemyController : MonoBehaviour
     public void OnCollisionEnter2D(Collision2D other)
     {
         RubyController player = other.gameObject.GetComponent<RubyController>();
-        
+
         if (player != null)
         {
             player.ChangeHealth(-1);
@@ -108,7 +108,7 @@ public class EnemyController : MonoBehaviour
         rigidbody2D.simulated = false;
         //optional if you added the fixed animation
         animator.SetTrigger("Fixed");
-
+        
         smokeEffect.Stop();
     }
 }
