@@ -23,10 +23,9 @@ public class RubyController : MonoBehaviour
 
     public int health { get { return currentHealth; } }
     int currentHealth;
-    public int count;
-    public static int RFixed = 0;
-    bool gameOver;
 
+    public int count;
+    
     Animator animator;
     Vector2 lookDirection = new Vector2(1, 0);
 
@@ -36,6 +35,7 @@ public class RubyController : MonoBehaviour
     public TextMeshProUGUI countText;
     public GameObject winTextObject;
     public GameObject gameoverTextObject;
+    bool gameOver;
 
 
     void Start()
@@ -160,6 +160,15 @@ public class RubyController : MonoBehaviour
     public void PlaySound(AudioClip clip)
     {
         audioSource.PlayOneShot(clip);
+    }
+
+    public void ChangeScore(int scoreAmount)
+    {
+        if (scoreAmount > 0)
+        {
+            currentScore = currentScore + scoreAmount;
+            SetCountText();
+        }
     }
 
     void SetCountText()
