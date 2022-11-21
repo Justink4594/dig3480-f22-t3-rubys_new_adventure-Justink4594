@@ -145,8 +145,8 @@ public class RubyController : MonoBehaviour
 
     public void SetCountText()
     {
-        countText.text = "Robots Fixed:" + count.ToString();
-        if (count >= 5)
+        countText.text = "Robots Fixed:" + score.ToString();
+        if (score >= 5)
         {
             winTextObject.SetActive(true);
         }
