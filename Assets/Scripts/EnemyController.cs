@@ -99,9 +99,9 @@ public class EnemyController : MonoBehaviour
             player.ChangeHealth(-1);
         }
 
-        if (controller != null)
+        if (player != null)
         {
-            if (controller.health < controller.maxHealth)
+            if (controller. < controller.maxHealth)
             {
                 controller.ChangeHealth(1); //this line of code is increasing Ruby's health by 1!
                 Destroy(gameObject);
