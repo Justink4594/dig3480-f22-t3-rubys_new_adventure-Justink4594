@@ -150,14 +150,4 @@ public class RubyController : MonoBehaviour
             winTextObject.SetActive(true);
         }
     }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.CompareTag("Damage"))
-        {
-            count = count + 1;
-
-            SetCountText();
-        }
-    }
 }
