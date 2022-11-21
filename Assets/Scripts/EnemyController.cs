@@ -100,7 +100,7 @@ public class EnemyController : MonoBehaviour
 
         if (RubyController != null)
         {
-            RubyController.scoreAmount(1);
+            RubyController.ChangeScore(1);
 
         }
     }
