@@ -98,7 +98,8 @@ public class EnemyController : MonoBehaviour
             player.ChangeHealth(-1);
         }
 
-        if (RubyController != null)
+        GameObject rubyControllerObject = GameObject.FindWithTag("RubyController");
+        if (rubyControllerObject != null)
         {
             RubyController.ChangeScore(1);
 
