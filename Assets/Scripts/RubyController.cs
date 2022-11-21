@@ -16,11 +16,7 @@ public class RubyController : MonoBehaviour
     float invincibleTimer;
 
     AudioSource audioSource;
-    public AudioClip BackgroundMusic;
-    public AudioClip winMusic;
-    public AudioClip loseMusic;
-    public AudioSource musicSource;
-
+    public GameObject BackgroundMusic;
     public GameObject projectilePrefab;
     public AudioClip throwSound;
     public AudioClip hitSound;
@@ -51,8 +47,7 @@ public class RubyController : MonoBehaviour
 
         gameOver = false;
         SetCountText();
-        musicSource.clip = BackgroundMusic;
-        musicSource.Play();
+        audioSource = GetComponent<AudioSource>();
         winTextObject.SetActive(false);
         gameoverTextObject.SetActive(false);
     }
