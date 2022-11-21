@@ -82,7 +82,7 @@ public class EnemyController : MonoBehaviour
         }
 
         RubyController = rubyControllerObject.GetComponent<RubyController>();
-        
+        if ()
     }
 
     //Public because we want to call it from elsewhere like the projectile script
