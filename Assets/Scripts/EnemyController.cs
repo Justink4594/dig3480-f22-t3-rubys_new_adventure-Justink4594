@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 
 public class EnemyController : MonoBehaviour
 {
@@ -18,20 +17,12 @@ public class EnemyController : MonoBehaviour
 
     Animator animator;
 
-    public TextMeshProUGUI countText;
-    public int count;
-    public static int score;
-
     // Start is called before the first frame update
     void Start()
     {
         rigidbody2D = GetComponent<Rigidbody2D>();
         timer = changeTime;
         animator = GetComponent<Animator>();
-
-        count = score;
-        SetCountText();
-
     }
 
     void Update()
@@ -80,15 +71,10 @@ public class EnemyController : MonoBehaviour
     public void OnCollisionEnter2D(Collision2D other)
     {
         RubyController player = other.gameObject.GetComponent<RubyController>();
-        Projectile p = other.gameObject.GetComponent<Projectile>();
 
         if (player != null)
         {
             player.ChangeHealth(-1);
-        }
-        if (p != null)
-        {
-            RubyController.score += 1;
         }
     }
 
@@ -101,10 +87,6 @@ public class EnemyController : MonoBehaviour
         animator.SetTrigger("Fixed");
 
         smokeEffect.Stop();
-    }
-    void SetCountText()
-    {
-        countText.text = "Robots Fixed:" + count.ToString();
     }
 }
 
