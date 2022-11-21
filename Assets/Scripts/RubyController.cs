@@ -17,10 +17,9 @@ public class RubyController : MonoBehaviour
 
 
     AudioSource audioSource;
+    public GameObject projectilePrefab;
     public AudioClip throwSound;
     public AudioClip hitSound;
-
-    public GameObject projectilePrefab;
 
     public int health { get { return currentHealth; } }
     int currentHealth;
@@ -139,8 +138,7 @@ public class RubyController : MonoBehaviour
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
 
         UIHealthBar.instance.SetValue(currentHealth / (float)maxHealth);
-
-        if (currentHealth <= 1)
+          if (currentHealth <= 1)
         {
             gameOver = true;
             gameoverTextObject.SetActive(true);
