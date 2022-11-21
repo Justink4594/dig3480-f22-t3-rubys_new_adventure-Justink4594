@@ -23,6 +23,7 @@ public class Background : MonoBehaviour
         if (RubyController.RFixed == 6)
         {
             musicSource.clip = Victory;
+            musicSource.Play();
         }
     }
 
