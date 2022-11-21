@@ -27,7 +27,7 @@ public class RubyController : MonoBehaviour
     public int score { get { return currentScore; } }
     public int currentScore;
     public static int count;
-    
+
     Animator animator;
     Vector2 lookDirection = new Vector2(1, 0);
 
