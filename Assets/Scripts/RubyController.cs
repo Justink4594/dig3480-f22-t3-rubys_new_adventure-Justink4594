@@ -153,11 +153,11 @@ public class RubyController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag(""))
+        if (other.gameObject.CompareTag("Damage"))
         {
-            other.gameObject.SetActive(false);
             count = count + 1;
 
             SetCountText();
         }
+    }
 }
