@@ -152,6 +152,6 @@ public class RubyController : MonoBehaviour
 
     void SetCountText()
     {
-        countText.text = "Robots Fixed:" + count.toString();
+        countText.text = "Robots Fixed:" + count.ToString();
     }
 }
