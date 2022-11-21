@@ -5,7 +5,10 @@ using UnityEngine;
 public class AudioScript : MonoBehaviour
 
 
-public AudioClip 
+public AudioClip Background
+public AudioClip Victory
+public AudioClip Defeat
+public AudioSource musicSource
 {
     // Start is called before the first frame update
     void Start()
