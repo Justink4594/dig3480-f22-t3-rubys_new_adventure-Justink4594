@@ -99,7 +99,7 @@ public class EnemyController : MonoBehaviour
 
         if (player != null)
         {
-            player.ChangeScore(1);
+            player.ChangeHealth(1);
         }
     }
 
