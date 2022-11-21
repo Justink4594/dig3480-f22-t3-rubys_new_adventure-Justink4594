@@ -98,6 +98,15 @@ public class EnemyController : MonoBehaviour
         {
             player.ChangeHealth(-1);
         }
+
+        if (controller != null)
+        {
+            if (controller.health < controller.maxHealth)
+            {
+                controller.ChangeHealth(1); //this line of code is increasing Ruby's health by 1!
+                Destroy(gameObject);
+            }
+        }
     }
 
     //Public because we want to call it from elsewhere like the projectile script
