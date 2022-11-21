@@ -27,7 +27,7 @@ public class EnemyController : MonoBehaviour
 
         {
 
-            rubyController = rubyControllerObject.GetComponent<RubyController>(); //and this line of code finds the rubyController and then stores it in a variable
+            rubyController = rubyControllerObject.GetComponent<RubyController>();
         {
             rigidbody2D = GetComponent<Rigidbody2D>();
             timer = changeTime;
