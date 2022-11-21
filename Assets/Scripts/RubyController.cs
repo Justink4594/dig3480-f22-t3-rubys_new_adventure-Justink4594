@@ -142,7 +142,7 @@ public class RubyController : MonoBehaviour
 
         UIHealthBar.instance.SetValue(currentHealth / (float)maxHealth);
 
-        if (gameOver = true)
+        if (gameOver == true)
         {
             BackgroundMusic.SetActive(false);
         }
