@@ -31,9 +31,8 @@ public class Projectile : MonoBehaviour
         {
             e.Fix();
             RubyController.score += 1;
-            Debug.log
+            Debug.Log("counter");
         }
-
         Destroy(gameObject);
 
         HardEnemyController o = other.collider.GetComponent<HardEnemyController>();
