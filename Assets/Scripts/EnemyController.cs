@@ -91,7 +91,7 @@ public class EnemyController : MonoBehaviour
         GameObject rubyControllerObject = GameObject.FindWithTag("RubyController");
         if (rubyControllerObject != null)
         {
-            RubyController.ChangeScore.currentScore(1);
+            RubyController.ChangeScore(1);
         }
     }
 
