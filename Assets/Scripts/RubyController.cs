@@ -157,12 +157,5 @@ public class RubyController : MonoBehaviour
             count = count + 1;
             SetCountText();
         }
-
-        if (collision.collider.tag == "Damage")
-        {
-            livesvalue = livesvalue - 1;
-            SetlivesText();
-        }
-
     }
 }
