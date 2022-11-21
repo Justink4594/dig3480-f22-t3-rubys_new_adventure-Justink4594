@@ -163,15 +163,6 @@ public class RubyController : MonoBehaviour
         audioSource.PlayOneShot(clip);
     }
 
-    public void ChangeScore(int scoreAmount)
-    {
-        if (scoreAmount > 0)
-        {
-            currentscore = currentscore + scoreAmount;
-            SetCountText();
-        }
-    }
-
     void SetCountText()
     {
         countText.text = "Robots Fixed:" + currentscore;
