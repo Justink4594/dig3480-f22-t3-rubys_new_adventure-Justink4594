@@ -102,6 +102,7 @@ public class RubyController : MonoBehaviour
             {
 
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // this loads the currently active scene
+                
 
             }
 
