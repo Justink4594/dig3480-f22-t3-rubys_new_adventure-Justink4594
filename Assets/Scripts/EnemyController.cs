@@ -97,13 +97,11 @@ public class EnemyController : MonoBehaviour
         {
             player.ChangeHealth(-1);
         }
-        RubyController p = rubyControllerObject.GetComponent<RubyController>();
-        if (p != null)
+
+        if (rubyControllerObject != null)
         {
-            if (p.scoreAmount)
-            {
-                p.scoreAmount(1);
-            }
+            rubyController.scoreAmount(1);
+
         }
     }
 
