@@ -88,9 +88,9 @@ public class EnemyController : MonoBehaviour
         {
             player.ChangeHealth(-1);
         }
-        if (RubyController != null)
+        if (player != null)
         {
-            RubyController.currentScore(1);
+            player.ChangeScore(1);
         }
     }
 
