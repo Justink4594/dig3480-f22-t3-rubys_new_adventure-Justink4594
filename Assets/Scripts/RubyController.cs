@@ -45,6 +45,8 @@ public class RubyController : MonoBehaviour
 
         currentHealth = maxHealth;
 
+
+        SetCountText();
         gameOver = false;
         audioSource = GetComponent<AudioSource>();
         winTextObject.SetActive(false);
