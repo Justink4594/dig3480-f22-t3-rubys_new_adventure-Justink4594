@@ -38,8 +38,6 @@ public class RubyController : MonoBehaviour
     public GameObject gameoverTextObject;
     bool gameOver;
 
-    private Background background;
-
     void Start()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
@@ -174,7 +172,6 @@ public class RubyController : MonoBehaviour
             speed = 0;
             gameOver = true;
             isInvincible = true;
-            Background.Victory
         }
     }
 }
