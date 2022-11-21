@@ -23,7 +23,7 @@ public class RubyController : MonoBehaviour
     public AudioClip Defeat;
     public AudioClip throwSound;
     public AudioClip hitSound;
-    
+
     public GameObject projectilePrefab;
 
     public int health { get { return currentHealth; } }
@@ -55,6 +55,8 @@ public class RubyController : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         winTextObject.SetActive(false);
         gameoverTextObject.SetActive(false);
+        musicSource.clip = Background;
+        musicSource.Play();
 
         SetCountText();
     }

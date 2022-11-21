@@ -19199,6 +19199,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3103036107559007923, guid: bfcd5a0fa6614ac46a159a152daf3119, type: 3}
+      propertyPath: Defeat
+      value: 
+      objectReference: {fileID: 8300000, guid: bc9174580ea99d041be0ee9721107b0b, type: 3}
+    - target: {fileID: 3103036107559007923, guid: bfcd5a0fa6614ac46a159a152daf3119, type: 3}
+      propertyPath: Victory
+      value: 
+      objectReference: {fileID: 8300000, guid: 9d4d886ea9e1cac4c9d2c75967346799, type: 3}
+    - target: {fileID: 3103036107559007923, guid: bfcd5a0fa6614ac46a159a152daf3119, type: 3}
       propertyPath: hitSound
       value: 
       objectReference: {fileID: 8300000, guid: 9b1bb1f450b7d444fa4a8019d13519a7, type: 3}
@@ -19214,6 +19222,10 @@ PrefabInstance:
       propertyPath: loseMusic
       value: 
       objectReference: {fileID: 8300000, guid: bc9174580ea99d041be0ee9721107b0b, type: 3}
+    - target: {fileID: 3103036107559007923, guid: bfcd5a0fa6614ac46a159a152daf3119, type: 3}
+      propertyPath: Background
+      value: 
+      objectReference: {fileID: 8300000, guid: e406c04157c663a43b859646b7ad3c2a, type: 3}
     - target: {fileID: 3103036107559007923, guid: bfcd5a0fa6614ac46a159a152daf3119, type: 3}
       propertyPath: throwSound
       value: 
