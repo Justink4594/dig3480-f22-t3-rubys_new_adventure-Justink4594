@@ -8,6 +8,8 @@ public class Background : MonoBehaviour
     public AudioClip Victory;
     public AudioClip Defeat;
     public AudioSource musicSource;
+
+    private RubyController rubyController;
     // Start is called before the first frame update
     void Start()
     {
