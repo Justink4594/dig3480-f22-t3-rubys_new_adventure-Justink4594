@@ -26,6 +26,7 @@ public class RubyController : MonoBehaviour
     int currentScore;
     bool gameOver;
     public static int RFixed = 0;
+    public int count;
 
     Animator animator;
     Vector2 lookDirection = new Vector2(1, 0);
