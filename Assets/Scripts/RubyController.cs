@@ -94,16 +94,10 @@ public class RubyController : MonoBehaviour
         }
 
         if (Input.GetKey(KeyCode.R))
-
         {
-
             if (gameOver == true)
-
             {
-
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // this loads the currently active scene
-                
-
             }
 
         }
