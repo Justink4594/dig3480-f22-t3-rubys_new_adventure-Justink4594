@@ -16,7 +16,6 @@ public class RubyController : MonoBehaviour
     float invincibleTimer;
 
     AudioSource audioSource;
-    public GameObject BackgroundMusic;
     public GameObject projectilePrefab;
     public AudioClip throwSound;
     public AudioClip hitSound;
