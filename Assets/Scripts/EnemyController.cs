@@ -22,6 +22,25 @@ public class EnemyController : MonoBehaviour
     void Start()
     {
         GameObject rubyControllerObject = GameObject.FindWithTag("RubyController"); //this line of code finds the RubyController script by looking for a "RubyController" tag on Ruby
+
+        if (rubyControllerObject != null)
+
+        {
+
+            rubyController = rubyControllerObject.GetComponent<RubyController>(); //and this line of code finds the rubyController and then stores it in a variable
+
+            print("Found the RubyConroller Script!");
+
+        }
+
+        if (rubyController == null)
+
+        {
+
+            print("Cannot find GameController Script!");
+
+        }
+
         {
             rigidbody2D = GetComponent<Rigidbody2D>();
             timer = changeTime;
@@ -45,7 +64,6 @@ public class EnemyController : MonoBehaviour
             timer = changeTime;
         }
     }
-
     void FixedUpdate()
     {
         //remember ! inverse the test, so if broken is true !broken will be false and return won’t be executed.
@@ -75,7 +93,7 @@ public class EnemyController : MonoBehaviour
     public void OnCollisionEnter2D(Collision2D other)
     {
         RubyController player = other.gameObject.GetComponent<RubyController>();
-        RubyController = rubyControllerObject.GetComponent<RubyController>();
+
         if (player != null)
         {
             player.ChangeHealth(-1);
