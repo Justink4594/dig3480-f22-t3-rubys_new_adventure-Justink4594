@@ -51,7 +51,8 @@ public class RubyController : MonoBehaviour
 
         gameOver = false;
         SetCountText();
-        audioSource = GetComponent<AudioSource>();
+        musicSource.clip = BackgroundMusic;
+        musicSource.Play();
         winTextObject.SetActive(false);
         gameoverTextObject.SetActive(false);
     }
