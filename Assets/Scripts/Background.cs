@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Background : MonoBehaviour
 {
-    public AudioClip Background;
+    public AudioClip starting;
     public AudioClip Victory;
     public AudioClip Defeat;
     public AudioSource musicSource;
@@ -13,14 +13,17 @@ public class Background : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        musicSource.clip = Background;
+        musicSource.clip = starting;
         musicSource.Play();
     }
 
     // Update is called once per frame
     void Update()
-        if(RubyController.RFixed == 6)
+    {
+        if (RubyController.RFixed == 6)
         {
-            
+            musicSource.clip = Victory;
         }
+    }
+
 }
