@@ -31,7 +31,7 @@ public class Projectile : MonoBehaviour
         {
             e.Fix();
             RubyController.score += 1;
-
+            Debug.log
         }
 
         Destroy(gameObject);
