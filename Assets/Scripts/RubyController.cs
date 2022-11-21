@@ -132,7 +132,7 @@ public class RubyController : MonoBehaviour
             GameObject projectileObject = Instantiate(HealthIncrease, rigidbody2d.position + Vector2.up * 0.5f, Quaternion.identity);
         }
 
-        if (currentHealth == 1)
+        if (currentHealth <= 1)
         {
             gameOver = true;
             gameoverTextObject.SetActive(true);
