@@ -44,7 +44,6 @@ public class RubyController : MonoBehaviour
         rigidbody2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
 
-        currentscore = count;
         currentHealth = maxHealth;
         gameOver = false;
         audioSource = GetComponent<AudioSource>();
@@ -54,6 +53,8 @@ public class RubyController : MonoBehaviour
 
     void Update()
     {
+
+        currentscore = count;
         horizontal = Input.GetAxis("Horizontal");
         vertical = Input.GetAxis("Vertical");
 
