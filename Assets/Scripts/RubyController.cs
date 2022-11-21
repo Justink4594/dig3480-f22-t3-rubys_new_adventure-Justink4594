@@ -49,6 +49,8 @@ public class RubyController : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         winTextObject.SetActive(false);
         gameoverTextObject.SetActive(false);
+
+        SetCountText();
     }
 
     void Update()
@@ -172,6 +174,6 @@ public class RubyController : MonoBehaviour
 
     void SetCountText()
     {
-        countText.text = "Robots Fixed:" + currentscore;
+        countText.text = "Robots Fixed:" + count.ToString();
     }
 }
