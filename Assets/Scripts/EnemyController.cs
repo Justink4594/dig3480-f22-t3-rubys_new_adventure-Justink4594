@@ -42,9 +42,9 @@ public class EnemyController : MonoBehaviour
         }
         {
 
-        rigidbody2D = GetComponent<Rigidbody2D>();
-        timer = changeTime;
-        animator = GetComponent<Animator>();
+            rigidbody2D = GetComponent<Rigidbody2D>();
+            timer = changeTime;
+            animator = GetComponent<Animator>();
         }
     }
     void Update()
@@ -95,6 +95,11 @@ public class EnemyController : MonoBehaviour
         if (player != null)
         {
             player.ChangeHealth(-1);
+        }
+
+        if (player != null)
+        {
+            player.ChangeScore(1);
         }
     }
 
