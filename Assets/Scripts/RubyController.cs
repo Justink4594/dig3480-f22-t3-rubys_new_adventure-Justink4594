@@ -22,7 +22,7 @@ public class RubyController : MonoBehaviour
 
     public int health { get { return currentHealth; } }
     int currentHealth;
-    int currentScore;
+    public static int currentScore;
     bool gameOver;
 
     Animator animator;
