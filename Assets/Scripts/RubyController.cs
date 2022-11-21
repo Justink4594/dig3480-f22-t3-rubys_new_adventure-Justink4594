@@ -149,13 +149,4 @@ public class RubyController : MonoBehaviour
             winTextObject.SetActive(true);
         }
     }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.collider.tag == "Health")
-        {
-            count = count + 1;
-            SetCountText();
-        }
-    }
 }
