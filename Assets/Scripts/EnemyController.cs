@@ -80,6 +80,9 @@ public class EnemyController : MonoBehaviour
         {
             player.ChangeHealth(-1);
         }
+
+        RubyController = rubyControllerObject.GetComponent<RubyController>();
+        
     }
 
     //Public because we want to call it from elsewhere like the projectile script
