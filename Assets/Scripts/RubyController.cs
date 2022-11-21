@@ -150,4 +150,14 @@ public class RubyController : MonoBehaviour
             winTextObject.SetActive(true);
         }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("PickUp"))
+        {
+            other.gameObject.SetActive(false);
+            count = count + 1;
+
+            SetCountText();
+        }
 }
