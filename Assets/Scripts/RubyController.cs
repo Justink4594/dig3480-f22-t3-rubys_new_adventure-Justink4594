@@ -38,6 +38,7 @@ public class RubyController : MonoBehaviour
     public GameObject gameoverTextObject;
     bool gameOver;
 
+    private Background background;
 
     void Start()
     {
@@ -173,6 +174,7 @@ public class RubyController : MonoBehaviour
             speed = 0;
             gameOver = true;
             isInvincible = true;
+            Background.Victory
         }
     }
 }
