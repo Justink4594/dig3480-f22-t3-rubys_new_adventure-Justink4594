@@ -14,6 +14,7 @@ public class RubyController : MonoBehaviour
     public float timeInvincible = 2.0f;
     bool isInvincible;
     float invincibleTimer;
+    
 
     AudioSource audioSource;
     public GameObject projectilePrefab;
@@ -43,7 +44,7 @@ public class RubyController : MonoBehaviour
         animator = GetComponent<Animator>();
 
         currentHealth = maxHealth;
-        currentscore = 
+        currentscore = count;
         gameOver = false;
         audioSource = GetComponent<AudioSource>();
         winTextObject.SetActive(false);
