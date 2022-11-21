@@ -19342,6 +19342,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2000041947}
     - target: {fileID: 3103036107559007923, guid: bfcd5a0fa6614ac46a159a152daf3119, type: 3}
+      propertyPath: BackgroundMusic
+      value: 
+      objectReference: {fileID: 1773658753}
+    - target: {fileID: 3103036107559007923, guid: bfcd5a0fa6614ac46a159a152daf3119, type: 3}
       propertyPath: projectilePrefab
       value: 
       objectReference: {fileID: 7710635367995824413, guid: 995f3440ae65a9b48bf22cac784a99a1, type: 3}
