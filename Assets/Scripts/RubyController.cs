@@ -43,6 +43,7 @@ public class RubyController : MonoBehaviour
 
         audioSource = GetComponent<AudioSource>();
 
+        count = 0;
         SetCountText();
         winTextObject.SetActive(false);
         loseTextObject.SetActive(false);
