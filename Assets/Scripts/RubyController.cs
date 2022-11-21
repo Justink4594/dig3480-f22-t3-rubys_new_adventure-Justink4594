@@ -167,5 +167,9 @@ public class RubyController : MonoBehaviour
     void SetCountText()
     {
         countText.text = "Robots Fixed:" + RFixed;
+        if (RFixed >= 6)
+        {
+            
+        }
     }
 }
