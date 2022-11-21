@@ -29,7 +29,7 @@ public class EnemyController : MonoBehaviour
 
             rubyController = rubyControllerObject.GetComponent<RubyController>(); //and this line of code finds the rubyController and then stores it in a variable
 
-           
+            ChangeScore();
 
         }
         {
