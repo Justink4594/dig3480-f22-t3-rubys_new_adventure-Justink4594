@@ -30,7 +30,7 @@ public class Projectile : MonoBehaviour
         if (e != null)
         {
             e.Fix();
-            RubyController. += 1;
+            RubyController.score += 1;
         }
 
         Destroy(gameObject);
@@ -39,7 +39,7 @@ public class Projectile : MonoBehaviour
         if (o != null)
         {
             o.Fix();
-            RubyController.count += 1;
+            RubyController.score += 1;
         }
 
 

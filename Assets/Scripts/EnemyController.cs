@@ -71,10 +71,15 @@ public class EnemyController : MonoBehaviour
     void OnCollisionEnter2D(Collision2D other)
     {
         RubyController player = other.gameObject.GetComponent<RubyController>();
+        Projectile p = other.gameObject.GetComponent<Projectile>();
 
         if (player != null)
         {
             player.ChangeHealth(-1);
+        }
+        if (p != null)
+        {
+            RubyController.score += 1;
         }
     }
 
@@ -87,6 +92,15 @@ public class EnemyController : MonoBehaviour
         animator.SetTrigger("Fixed");
 
         smokeEffect.Stop();
+    }
+
+    void SetCountText()
+    {
+        countText.text = "Robots Fixed:" + count.ToString();
+        if (count >= 5)
+        {
+            winTextObject.SetActive(true);
+        }
     }
 }
 
