@@ -97,12 +97,6 @@ public class EnemyController : MonoBehaviour
         {
             player.ChangeHealth(-1);
         }
-
-        GameObject rubyControllerObject = GameObject.FindWithTag("RubyController");
-        if (rubyControllerObject != null)
-        {
-            RubyController.ChangeScore(1);
-        }
     }
 
     //Public because we want to call it from elsewhere like the projectile script
