@@ -44,8 +44,8 @@ public class RubyController : MonoBehaviour
         rigidbody2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
 
-        currentHealth = maxHealth;
         currentscore = count;
+        currentHealth = maxHealth;
         gameOver = false;
         audioSource = GetComponent<AudioSource>();
         winTextObject.SetActive(false);
