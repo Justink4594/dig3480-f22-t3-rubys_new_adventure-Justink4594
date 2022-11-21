@@ -17,10 +17,6 @@ public class RubyController : MonoBehaviour
 
 
     AudioSource audioSource;
-    AudioSource musicSource;
-    public AudioClip Background;
-    public AudioClip Victory;
-    public AudioClip Defeat;
     public AudioClip throwSound;
     public AudioClip hitSound;
 
@@ -55,8 +51,6 @@ public class RubyController : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         winTextObject.SetActive(false);
         gameoverTextObject.SetActive(false);
-        musicSource.clip = Background;
-        musicSource.Play();
 
         SetCountText();
     }
