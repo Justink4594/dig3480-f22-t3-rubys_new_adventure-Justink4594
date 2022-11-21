@@ -154,19 +154,12 @@ public class RubyController : MonoBehaviour
     {
         if (collision.collider.tag == "Health")
         {
-            scorevalue = scorevalue + 1;
-            SetScoreText();
-        }
-        if ((scorevalue == 4) && (collision.collider.tag == ("Coin")))
-        {
-            transform.position = new Vector3(53.0f, 0.0f, 0.0f);
-            livesvalue = 3;
-            SetlivesText();
+            count = count + 1;
+            SetCountText();
         }
 
-        if (collision.collider.tag == "Enemy")
+        if (collision.collider.tag == "Damage")
         {
-            Destroy(collision.collider.gameObject);
             livesvalue = livesvalue - 1;
             SetlivesText();
         }
