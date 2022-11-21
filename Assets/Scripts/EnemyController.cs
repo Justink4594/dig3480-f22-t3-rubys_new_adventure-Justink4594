@@ -16,6 +16,8 @@ public class EnemyController : MonoBehaviour
 
     Animator animator;
 
+    private RubyController rubyController;
+
     // Start is called before the first frame update
     void Start()
     {
