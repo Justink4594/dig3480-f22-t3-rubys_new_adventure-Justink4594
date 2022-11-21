@@ -161,7 +161,7 @@ public class RubyController : MonoBehaviour
     {
         if (scoreAmount > 0)
         {
-            currentScore = currentScore + scoreAmount;
+            currentscore = currentscore + scoreAmount;
             SetCountText();
         }
     }
