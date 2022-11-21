@@ -7,8 +7,9 @@ public class EnemyController : MonoBehaviour
     public float speed;
     public bool vertical;
     public float changeTime = 3.0f;
-
     public ParticleSystem smokeEffect;
+    public static int score;
+    public TextMeshProUGUI countText;
 
     Rigidbody2D rigidbody2D;
     float timer;
@@ -75,6 +76,11 @@ public class EnemyController : MonoBehaviour
         if (player != null)
         {
             player.ChangeHealth(-1);
+        }
+
+        if (Projectile != null)
+        {
+            
         }
     }
 
