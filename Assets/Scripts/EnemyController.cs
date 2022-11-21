@@ -97,13 +97,12 @@ public class EnemyController : MonoBehaviour
         {
             player.ChangeHealth(-1);
         }
-        rubyController p = rubyControllerObject.GetComponent<RubyController>();
+        RubyController p = rubyControllerObject.GetComponent<RubyController>();
         if (p != null)
         {
-            if (. < controller.maxHealth)
+            if (p.scoreAmount)
             {
-                controller.ChangeHealth(1); //this line of code is increasing Ruby's health by 1!
-                Destroy(gameObject);
+                p.scoreAmount(1);
             }
         }
     }
