@@ -133,6 +133,7 @@ public class RubyController : MonoBehaviour
 
         if (currentHealth == 1)
         {
+            
             gameoverTextObject.SetActive(true);
             speed = 0;
         }
