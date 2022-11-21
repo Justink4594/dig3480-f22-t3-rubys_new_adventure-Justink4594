@@ -146,7 +146,7 @@ public class RubyController : MonoBehaviour
     {
         if (scoreAmount > 0)
             currentScore = currentScore + scoreAmount;
-        SetCountText();
+            SetCountText();
     }
 
 
