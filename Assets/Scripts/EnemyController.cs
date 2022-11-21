@@ -72,15 +72,17 @@ public class EnemyController : MonoBehaviour
     public void OnCollisionEnter2D(Collision2D other)
     {
         RubyController player = other.gameObject.GetComponent<RubyController>();
+        Projectile proj = other.gameObject.GetComponent<Projectile>();
 
         if (player != null)
         {
             player.ChangeHealth(-1);
         }
 
-        if (Projectile != null)
+        if (Proj != null)
         {
-            
+            score += 1;
+            SetCountText();
         }
     }
 
