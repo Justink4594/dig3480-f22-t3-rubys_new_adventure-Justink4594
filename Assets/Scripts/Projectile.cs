@@ -24,13 +24,14 @@ public class Projectile : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter2D(Collision2D other)
+    public void OnCollisionEnter2D(Collision2D other)
     {
         EnemyController e = other.collider.GetComponent<EnemyController>();
         if (e != null)
         {
             e.Fix();
             RubyController.score += 1;
+            RubyController.SetCountText();
         }
         Destroy(gameObject);
 
@@ -39,6 +40,7 @@ public class Projectile : MonoBehaviour
         {
             o.Fix();
             RubyController.score += 1;
+            RubyController.SetCountText();
         }
 
         Destroy(gameObject);
