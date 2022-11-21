@@ -144,6 +144,7 @@ public class RubyController : MonoBehaviour
     public void ChangeScore(int scoreAmount)
     {
         if (scoreAmount > 0)
+        scoreAmount = 
 
     }
 }
