@@ -53,6 +53,8 @@ public class RubyController : MonoBehaviour
 
     void Update()
     {
+
+        count = RFixed;
         horizontal = Input.GetAxis("Horizontal");
         vertical = Input.GetAxis("Vertical");
 
