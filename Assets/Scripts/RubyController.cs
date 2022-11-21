@@ -32,7 +32,7 @@ public class RubyController : MonoBehaviour
     public int count;
     public TextMeshProUGUI countText;
     public GameObject winTextObject;
-    public GameObject loseTextObject;
+    public GameObject gameoverTextObject;
 
 
     void Start()
