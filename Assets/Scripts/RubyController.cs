@@ -145,7 +145,7 @@ public class RubyController : MonoBehaviour
     public void ChangeScore(int scoreAmount)
     {
         if (scoreAmount > 0)
-        currentScore = Mathf.Clamp(currentScore + amount, 0, maxHealth);
+        currentScore = currentScore + amount;
 
     }
 }
