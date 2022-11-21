@@ -98,7 +98,8 @@ public class RubyController : MonoBehaviour
         {
             if (gameOver == true)
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // this loads the currently active scene
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                
             }
 
         }
