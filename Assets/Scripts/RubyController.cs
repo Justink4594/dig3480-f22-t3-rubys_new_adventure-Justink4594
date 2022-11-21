@@ -139,7 +139,6 @@ public class RubyController : MonoBehaviour
         if (currentHealth <= 1)
         {
             gameOver = true;
-            isInvincible = true;
             gameoverTextObject.SetActive(true);
             speed = 0;
         }
