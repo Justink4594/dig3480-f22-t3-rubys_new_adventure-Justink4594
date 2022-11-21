@@ -21,6 +21,7 @@ public class RubyController : MonoBehaviour
 
     public int health { get { return currentHealth; } }
     int currentHealth;
+    int 
 
     Animator animator;
     Vector2 lookDirection = new Vector2(1, 0);
@@ -142,7 +143,7 @@ public class RubyController : MonoBehaviour
         audioSource.PlayOneShot(clip);
     }
 
-    public void ChangeScore(int amount)
+    public void ChangeScore(int scoreamount)
     {
         if()
     }
