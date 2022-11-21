@@ -167,7 +167,7 @@ public class RubyController : MonoBehaviour
 
     public void PlaySound(AudioClip clip)
     {
-        audioSource.PlayOneShot(clip);
+        musicSource.clip = PlayOneShot;
     }
 
     void SetCountText()
