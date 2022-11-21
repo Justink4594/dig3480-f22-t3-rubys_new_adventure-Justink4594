@@ -87,8 +87,12 @@ public class EnemyController : MonoBehaviour
         {
             player.ChangeHealth(-1);
         }
-
+        if (rubyController != null)
+        {
+            rubyController.currentScore(1);
+        }
     }
+
 
     //Public because we want to call it from elsewhere like the projectile script
     public void Fix()
@@ -98,13 +102,5 @@ public class EnemyController : MonoBehaviour
         //optional if you added the fixed animation
         animator.SetTrigger("Fixed");
         smokeEffect.Stop();
-
-        GameObject rubyControllerObject = GameObject.FindWithTag("RubyController");
-        if (rubyControllerObject != null)
-        {
-            RubyController.currentScore(1);
-        }
     }
 }
-
-
