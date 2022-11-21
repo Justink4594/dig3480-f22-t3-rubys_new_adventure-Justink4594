@@ -102,7 +102,6 @@ public class EnemyController : MonoBehaviour
         if (rubyControllerObject != null)
         {
             RubyController.ChangeScore(1);
-
         }
     }
 
