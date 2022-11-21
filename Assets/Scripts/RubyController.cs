@@ -149,6 +149,7 @@ public class RubyController : MonoBehaviour
             currentScore = currentScore + scoreAmount;
             SetCountText();
         }
+        if(EnemyController)
     }
 
 
