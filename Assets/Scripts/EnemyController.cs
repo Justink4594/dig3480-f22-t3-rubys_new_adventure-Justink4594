@@ -38,9 +38,9 @@ public class EnemyController : MonoBehaviour
         {
 
             rigidbody2D = GetComponent<Rigidbody2D>();
-        timer = changeTime;
-        animator = GetComponent<Animator>();
-    }
+            timer = changeTime;
+            animator = GetComponent<Animator>();
+        }
 
     void Update()
     {
@@ -84,14 +84,20 @@ public class EnemyController : MonoBehaviour
         rigidbody2D.MovePosition(position);
     }
 
-    public void OnCollisionEnter2D(Collision2D other)
+    void OnCollisionEnter2D(Collision2D other)
     {
         RubyController player = other.gameObject.GetComponent<RubyController>();
         if (player != null)
         {
             player.ChangeHealth(-1);
         }
-    }
+
+        GameObject rubyControllerObject = GameObject.FindWithTag("RubyController");
+        if (rubyControllerObject != null)
+            {
+                RubyController.ChangeScore(1);
+            }
+        }
 
     //Public because we want to call it from elsewhere like the projectile script
     public void Fix()
@@ -102,5 +108,6 @@ public class EnemyController : MonoBehaviour
         animator.SetTrigger("Fixed");
         smokeEffect.Stop();
     }
+}
 }
 
