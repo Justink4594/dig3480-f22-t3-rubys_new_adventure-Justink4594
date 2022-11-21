@@ -45,7 +45,6 @@ public class RubyController : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
 
         count = score;
-        SetCountText();
         winTextObject.SetActive(false);
         loseTextObject.SetActive(false);
     }
