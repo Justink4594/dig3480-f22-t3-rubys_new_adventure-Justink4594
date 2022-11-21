@@ -31,7 +31,7 @@ public class Projectile : MonoBehaviour
         {
             e.Fix();
             RubyController.score += 1;
-            RubyController.count.SetCountText();
+            RubyController.score.SetCountText();
         }
         Destroy(gameObject);
 
@@ -40,7 +40,7 @@ public class Projectile : MonoBehaviour
         {
             o.Fix();
             RubyController.score += 1;
-            RubyController.count.SetCountText();
+            RubyController.score.SetCountText();
         }
 
         Destroy(gameObject);
