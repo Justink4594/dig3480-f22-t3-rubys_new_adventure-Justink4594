@@ -19,8 +19,8 @@ public class RubyController : MonoBehaviour
     public AudioClip BackgroundMusic;
     public AudioClip winMusic;
     public AudioClip loseMusic;
-    public AudioClip musicSource;
-    
+    public AudioSource musicSource;
+
     public GameObject projectilePrefab;
     public AudioClip throwSound;
     public AudioClip hitSound;
