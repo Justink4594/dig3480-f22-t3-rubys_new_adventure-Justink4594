@@ -25,6 +25,7 @@ public class RubyController : MonoBehaviour
     int currentHealth;
     int currentScore;
     bool gameOver;
+    public static int RFixed = 0;
 
     Animator animator;
     Vector2 lookDirection = new Vector2(1, 0);
@@ -45,7 +46,6 @@ public class RubyController : MonoBehaviour
         currentHealth = maxHealth;
 
         gameOver = false;
-        SetCountText();
         audioSource = GetComponent<AudioSource>();
         winTextObject.SetActive(false);
         gameoverTextObject.SetActive(false);
