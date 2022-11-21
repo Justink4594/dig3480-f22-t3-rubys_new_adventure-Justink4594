@@ -21,11 +21,10 @@ public class RubyController : MonoBehaviour
     public AudioClip throwSound;
     public AudioClip hitSound;
 
-    public static int count = 0;
     public int health { get { return currentHealth; } }
     int currentHealth;
-    public int score { get { return currentscore; } }
-    int currentscore;
+    int count;
+    public static int RFixed = 0;
     bool gameOver;
 
     Animator animator;
@@ -56,7 +55,7 @@ public class RubyController : MonoBehaviour
     void Update()
     {
 
-        currentscore = count;
+        count = RFixed;
         horizontal = Input.GetAxis("Horizontal");
         vertical = Input.GetAxis("Vertical");
 
@@ -165,6 +164,6 @@ public class RubyController : MonoBehaviour
 
     void SetCountText()
     {
-        countText.text = "Robots Fixed:" + currentscore;
+        countText.text = "Robots Fixed:" + RFixed;
     }
 }

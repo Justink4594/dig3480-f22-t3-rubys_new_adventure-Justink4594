@@ -8,7 +8,6 @@ public class EnemyController : MonoBehaviour
     public bool vertical;
     public float changeTime = 3.0f;
     public ParticleSystem smokeEffect;
-    public int currentScore;
 
     Rigidbody2D rigidbody2D;
     float timer;
@@ -22,16 +21,12 @@ public class EnemyController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GameObject rubyControllerObject = GameObject.FindWithTag("RubyController"); //this line of code finds the RubyController script by looking for a "RubyController" tag on Ruby
-        if (rubyControllerObject != null)
-        {
-            rubyController = rubyControllerObject.GetComponent<RubyController>();
-        }
-        {
-            rigidbody2D = GetComponent<Rigidbody2D>();
-            timer = changeTime;
-            animator = GetComponent<Animator>();
-        }
+
+
+        rigidbody2D = GetComponent<Rigidbody2D>();
+        timer = changeTime;
+        animator = GetComponent<Animator>();
+
     }
     void Update()
     {
@@ -81,10 +76,6 @@ public class EnemyController : MonoBehaviour
         if (player != null)
         {
             player.ChangeHealth(-1);
-        }
-        if (player != null)
-        {
-            player.ChangeScore(1);
         }
     }
 

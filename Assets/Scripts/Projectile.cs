@@ -33,14 +33,14 @@ public class Projectile : MonoBehaviour
         if (e != null)
         {
             e.Fix();
-            RubyController.count += 1;
+            RubyController.RFixed += 1;
         }
         Destroy(gameObject);
 
         if (o != null)
         {
             o.Fix();
-            RubyController.count += 1;
+            RubyController.RFixed += 1;
         }
 
         Destroy(gameObject);
