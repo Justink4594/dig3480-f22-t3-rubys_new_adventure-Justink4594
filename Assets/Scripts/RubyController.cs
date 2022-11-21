@@ -17,9 +17,14 @@ public class RubyController : MonoBehaviour
 
 
     AudioSource audioSource;
-    public GameObject projectilePrefab;
+    AudioSource musicSource;
+    public AudioClip Background;
+    public AudioClip Victory;
+    public AudioClip Defeat;
     public AudioClip throwSound;
     public AudioClip hitSound;
+    
+    public GameObject projectilePrefab;
 
     public int health { get { return currentHealth; } }
     int currentHealth;
