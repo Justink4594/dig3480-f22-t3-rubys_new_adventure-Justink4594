@@ -45,7 +45,7 @@ public class RubyController : MonoBehaviour
 
         currentHealth = maxHealth;
 
-
+        RFixed = 0;
         SetCountText();
         gameOver = false;
         audioSource = GetComponent<AudioSource>();
