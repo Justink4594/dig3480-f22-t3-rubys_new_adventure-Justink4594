@@ -99,7 +99,6 @@ public class RubyController : MonoBehaviour
             if (gameOver == true)
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-                
             }
 
         }
@@ -138,6 +137,7 @@ public class RubyController : MonoBehaviour
             gameOver = true;
             gameoverTextObject.SetActive(true);
             speed = 0;
+            audioSource = false;
         }
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
 
