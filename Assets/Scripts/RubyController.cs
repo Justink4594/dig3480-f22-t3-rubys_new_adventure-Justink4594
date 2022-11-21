@@ -172,6 +172,7 @@ public class RubyController : MonoBehaviour
             winTextObject.SetActive(true);
             speed = 0;
             gameOver = true;
+            isInvincible = true;
         }
     }
 }
