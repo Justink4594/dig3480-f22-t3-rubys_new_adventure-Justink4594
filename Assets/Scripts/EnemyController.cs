@@ -19,6 +19,8 @@ public class EnemyController : MonoBehaviour
     Animator animator;
 
     public TextMeshProUGUI countText;
+    public int count;
+    public static int score;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +29,7 @@ public class EnemyController : MonoBehaviour
         timer = changeTime;
         animator = GetComponent<Animator>();
 
+        count = score;
         SetCountText();
 
     }
