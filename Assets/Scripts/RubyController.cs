@@ -49,6 +49,7 @@ public class RubyController : MonoBehaviour
         winTextObject.SetActive(false);
         gameoverTextObject.SetActive(false);
 
+        SetCountText();
     }
 
     void Update()
@@ -159,5 +160,10 @@ public class RubyController : MonoBehaviour
     public void PlaySound(AudioClip clip)
     {
         audioSource.PlayOneShot(clip);
+    }
+
+    void SetCountText()
+    {
+        countText.text = "Robots Fixed:" + RFixed;
     }
 }
