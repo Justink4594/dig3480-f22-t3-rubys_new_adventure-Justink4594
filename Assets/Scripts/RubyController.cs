@@ -14,16 +14,17 @@ public class RubyController : MonoBehaviour
     public float timeInvincible = 2.0f;
     bool isInvincible;
     float invincibleTimer;
-    
+
 
     AudioSource audioSource;
     public GameObject projectilePrefab;
     public AudioClip throwSound;
     public AudioClip hitSound;
 
+    public int count = 0;
     public int health { get { return currentHealth; } }
     int currentHealth;
-    public int count { get { return currentscore; } }
+    public int score { get { return currentscore; } }
     int currentscore;
     bool gameOver;
 
