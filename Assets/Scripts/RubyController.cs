@@ -41,6 +41,8 @@ public class RubyController : MonoBehaviour
 
         currentHealth = maxHealth;
 
+
+        SetCountText();
         audioSource = GetComponent<AudioSource>();
         winTextObject.SetActive(false);
         loseTextObject.SetActive(false);
@@ -142,6 +144,11 @@ public class RubyController : MonoBehaviour
     public void ChangeScore(int scoreAmount)
     {
         if (scoreAmount > 0)
-        
+            
+    }
+
+    void SetCountText()
+    {
+        count.text = "Robots Fixed:" + countvalue.toString();
     }
 }
