@@ -50,8 +50,6 @@ public class RubyController : MonoBehaviour
 
     void Update()
     {
-
-        count = RFixed;
         horizontal = Input.GetAxis("Horizontal");
         vertical = Input.GetAxis("Vertical");
 
@@ -166,7 +164,7 @@ public class RubyController : MonoBehaviour
             SetCountText();
         }
     }
-    
+
     void SetCountText()
     {
         countText.text = "Robots Fixed:" + currentScore.ToString();

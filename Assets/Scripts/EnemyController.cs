@@ -32,16 +32,12 @@ public class EnemyController : MonoBehaviour
             print("Found the RubyConroller Script!");
 
         }
-
-        if (rubyController == null)
-
         {
-
             rigidbody2D = GetComponent<Rigidbody2D>();
             timer = changeTime;
             animator = GetComponent<Animator>();
         }
-
+    }
     void Update()
     {
         //remember ! inverse the test, so if broken is true !broken will be false and return won’t be executed.
@@ -94,10 +90,10 @@ public class EnemyController : MonoBehaviour
 
         GameObject rubyControllerObject = GameObject.FindWithTag("RubyController");
         if (rubyControllerObject != null)
-            {
-                RubyController.ChangeScore(1);
-            }
+        {
+            RubyController.ChangeScore(1);
         }
+    }
 
     //Public because we want to call it from elsewhere like the projectile script
     public void Fix()
@@ -109,5 +105,5 @@ public class EnemyController : MonoBehaviour
         smokeEffect.Stop();
     }
 }
-}
+
 
