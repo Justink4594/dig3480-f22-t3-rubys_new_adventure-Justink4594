@@ -16,7 +16,7 @@ public class RubyController : MonoBehaviour
     float invincibleTimer;
 
 
-
+    AudioSource audioSource;
     AudioSource musicSource;
     public AudioClip Background;
     public AudioClip Victory;
@@ -52,6 +52,7 @@ public class RubyController : MonoBehaviour
         currentHealth = maxHealth;
         RFixed = 0;
         gameOver = false;
+        audioSource = GetComponent<AudioSource>();
         winTextObject.SetActive(false);
         gameoverTextObject.SetActive(false);
         musicSource.clip = Background;
@@ -167,7 +168,7 @@ public class RubyController : MonoBehaviour
 
     public void PlaySound(AudioClip clip)
     {
-        musicSource.clip = PlayOneShot;
+        audioSource.PlayOneShot(clip);
     }
 
     void SetCountText()
