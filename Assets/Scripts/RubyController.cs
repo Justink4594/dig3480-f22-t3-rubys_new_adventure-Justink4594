@@ -28,7 +28,8 @@ public class RubyController : MonoBehaviour
     public GameObject HealthIncrease;
     public GameObject HealthDecrease;
 
-    public static int count;
+    public int count;
+    public static int score;
     public TextMeshProUGUI countText;
     public GameObject winTextObject;
     public GameObject loseTextObject;
@@ -43,7 +44,7 @@ public class RubyController : MonoBehaviour
 
         audioSource = GetComponent<AudioSource>();
 
-        count = 0;
+        count = score;
         SetCountText();
         winTextObject.SetActive(false);
         loseTextObject.SetActive(false);
