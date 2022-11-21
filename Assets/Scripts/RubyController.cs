@@ -45,6 +45,7 @@ public class RubyController : MonoBehaviour
 
         SetCountText();
         winTextObject.SetActive(false);
+        loseTextObject.SetActive(false);
     }
 
     void Update()
