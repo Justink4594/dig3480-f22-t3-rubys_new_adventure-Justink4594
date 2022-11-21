@@ -141,7 +141,7 @@ public class RubyController : MonoBehaviour
         audioSource.PlayOneShot(clip);
     }
 
-    public void ChangeScore(int scoreAmount)
+    public void ChangeScore(int amount)
     {
         if (scoreAmount > 0)
         scoreAmount = 
