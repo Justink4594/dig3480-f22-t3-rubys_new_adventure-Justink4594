@@ -29,18 +29,9 @@ public class EnemyController : MonoBehaviour
 
             rubyController = rubyControllerObject.GetComponent<RubyController>(); //and this line of code finds the rubyController and then stores it in a variable
 
-            print("Found the RubyConroller Script!");
+           
 
         }
-
-        if (rubyController == null)
-
-        {
-
-            print("Cannot find GameController Script!");
-
-        }
-
         {
             rigidbody2D = GetComponent<Rigidbody2D>();
             timer = changeTime;
