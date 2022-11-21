@@ -24,9 +24,8 @@ public class RubyController : MonoBehaviour
     public int health { get { return currentHealth; } }
     int currentHealth;
 
-    public int score { get { return currentScore; } }
-    public int currentScore;
-    public static int count;
+    public int count;
+    public static int RFixed;
 
     Animator animator;
     Vector2 lookDirection = new Vector2(1, 0);
@@ -56,6 +55,7 @@ public class RubyController : MonoBehaviour
 
     void Update()
     {
+        count = RFixed;
         horizontal = Input.GetAxis("Horizontal");
         vertical = Input.GetAxis("Vertical");
 
@@ -160,15 +160,6 @@ public class RubyController : MonoBehaviour
     public void PlaySound(AudioClip clip)
     {
         audioSource.PlayOneShot(clip);
-    }
-
-    public void ChangeScore(int scoreAmount)
-    {
-        if (scoreAmount > 0)
-        {
-            currentScore = currentScore + scoreAmount;
-            SetCountText();
-        }
     }
 
     void SetCountText()
