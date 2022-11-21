@@ -11,7 +11,8 @@ public class Background : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        musicSource.clip = Background;
+        musicSource.Play();
     }
 
     // Update is called once per frame
