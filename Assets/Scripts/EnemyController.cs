@@ -22,12 +22,6 @@ public class EnemyController : MonoBehaviour
     void Start()
     {
         GameObject rubyControllerObject = GameObject.FindWithTag("RubyController"); //this line of code finds the RubyController script by looking for a "RubyController" tag on Ruby
-
-        if (rubyControllerObject != null)
-
-        {
-
-            rubyController = rubyControllerObject.GetComponent<RubyController>();
         {
             rigidbody2D = GetComponent<Rigidbody2D>();
             timer = changeTime;
@@ -95,7 +89,7 @@ public class EnemyController : MonoBehaviour
         rigidbody2D.simulated = false;
         //optional if you added the fixed animation
         animator.SetTrigger("Fixed");
-    smokeEffect.Stop();
+        smokeEffect.Stop();
     }
 }
 
