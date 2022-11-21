@@ -98,8 +98,10 @@ public class EnemyController : MonoBehaviour
         {
             player.ChangeHealth(-1);
         }
-    }
 
+        
+    }
+    
     //Public because we want to call it from elsewhere like the projectile script
     public void Fix()
     {
