@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class EnemyController : MonoBehaviour
 {
@@ -17,12 +18,17 @@ public class EnemyController : MonoBehaviour
 
     Animator animator;
 
+    public TextMeshProUGUI countText;
+
     // Start is called before the first frame update
     void Start()
     {
         rigidbody2D = GetComponent<Rigidbody2D>();
         timer = changeTime;
         animator = GetComponent<Animator>();
+
+        SetCountText();
+
     }
 
     void Update()
@@ -92,6 +98,14 @@ public class EnemyController : MonoBehaviour
         animator.SetTrigger("Fixed");
 
         smokeEffect.Stop();
+    }
+    void SetCountText()
+    {
+        countText.text = "Robots Fixed:" + count.ToString();
+        if (count >= 5)
+        {
+            winTextObject.SetActive(true);
+        }
     }
 }
 
