@@ -137,7 +137,6 @@ public class RubyController : MonoBehaviour
             gameOver = true;
             gameoverTextObject.SetActive(true);
             speed = 0;
-            BackgroundMusic.SetActive(false);
         }
 
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
