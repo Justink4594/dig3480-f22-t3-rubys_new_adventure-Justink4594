@@ -142,13 +142,4 @@ public class RubyController : MonoBehaviour
     {
         audioSource.PlayOneShot(clip);
     }
-
-    public void SetCountText()
-    {
-        countText.text = "Robots Fixed:" + score.ToString();
-        if (score >= 5)
-        {
-            winTextObject.SetActive(true);
-        }
-    }
 }

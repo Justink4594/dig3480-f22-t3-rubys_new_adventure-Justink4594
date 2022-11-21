@@ -9,7 +9,6 @@ public class EnemyController : MonoBehaviour
     public float changeTime = 3.0f;
     public ParticleSystem smokeEffect;
     public static int score;
-    public TextMeshProUGUI countText;
 
     Rigidbody2D rigidbody2D;
     float timer;
@@ -82,7 +81,6 @@ public class EnemyController : MonoBehaviour
         if (Proj != null)
         {
             score += 1;
-            SetCountText();
         }
     }
 
