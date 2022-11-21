@@ -108,11 +108,5 @@ public class EnemyController : MonoBehaviour
         //optional if you added the fixed animation
         animator.SetTrigger("Fixed");
         smokeEffect.Stop();
-
-        RubyController player = gameObject.GetComponent<RubyController>();
-        if (player != null)
-        {
-            player.ChangeHealth(1);
-        }
     }
 }
