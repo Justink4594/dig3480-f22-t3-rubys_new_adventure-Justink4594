@@ -160,4 +160,9 @@ public class RubyController : MonoBehaviour
     {
         audioSource.PlayOneShot(clip);
     }
+
+    void SetCountText()
+    {
+        countText.text = "Robots Fixed:" + RFixed.ToString();
+    }
 }
