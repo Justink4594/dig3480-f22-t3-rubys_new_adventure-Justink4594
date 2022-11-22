@@ -32,7 +32,7 @@ public class RubyController : MonoBehaviour
     public static int RFixed;
     public static int level = 0;
 
-    public int cogs =4;
+    public int cogs = 4;
 
     Animator animator;
     Vector2 lookDirection = new Vector2(1, 0);
