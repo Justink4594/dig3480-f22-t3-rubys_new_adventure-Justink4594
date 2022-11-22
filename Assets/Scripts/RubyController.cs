@@ -57,7 +57,6 @@ public class RubyController : MonoBehaviour
         winTextObject.SetActive(false);
         gameoverTextObject.SetActive(false);
         stage2winTextObject.SetActive(false);
-        level = 1;
 
         SetCountText();
     }
