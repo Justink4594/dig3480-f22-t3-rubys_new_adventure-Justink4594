@@ -176,7 +176,6 @@ public class RubyController : MonoBehaviour
         if (RFixed >= 6)
         {
             winTextObject.SetActive(true);
-            speed = 0;
             gameOver = true;
             isInvincible = true;
             PlaySound(win);
