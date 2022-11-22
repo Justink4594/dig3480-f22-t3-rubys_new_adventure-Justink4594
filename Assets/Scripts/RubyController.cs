@@ -143,7 +143,7 @@ public class RubyController : MonoBehaviour
 
         UIHealthBar.instance.SetValue(currentHealth / (float)maxHealth);
 
-        if (currentHealth <= 1)
+        if (currentHealth <= 0)
         {
             gameOver = true;
             gameoverTextObject.SetActive(true);
