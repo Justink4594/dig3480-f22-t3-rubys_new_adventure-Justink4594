@@ -102,6 +102,7 @@ public class RubyController : MonoBehaviour
                 if (RFixed == 6)
                 {
                     SceneManager.LoadScene("Stage2");
+                    level += 1;
                 }
 
                 else if (character != null)
@@ -186,7 +187,7 @@ public class RubyController : MonoBehaviour
         {
             winTextObject.SetActive(true);
         }
-        if (RFixed == 4 && )
+        if (RFixed == 4 && level == 2)
         {
             stage2winTextObject.SetActive(true);
             gameOver = true;
