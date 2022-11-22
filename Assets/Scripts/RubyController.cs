@@ -17,9 +17,13 @@ public class RubyController : MonoBehaviour
 
 
     AudioSource audioSource;
-    public GameObject projectilePrefab;
+
     public AudioClip throwSound;
     public AudioClip hitSound;
+    public AudioClip playerSteps;
+    public AudioClip win;
+    public AudioClip lose;
+    public GameObject music;
 
     public int health { get { return currentHealth; } }
     int currentHealth;
@@ -32,6 +36,7 @@ public class RubyController : MonoBehaviour
 
     public GameObject HealthIncrease;
     public GameObject HealthDecrease;
+    public GameObject projectilePrefab;
 
     public TextMeshProUGUI countText;
     public GameObject winTextObject;
