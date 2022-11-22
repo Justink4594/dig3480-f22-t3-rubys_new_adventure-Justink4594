@@ -149,6 +149,7 @@ public class RubyController : MonoBehaviour
             gameoverTextObject.SetActive(true);
             speed = 0;
             PlaySound(lose);
+            audioSource.Stop();
         }
     }
 
