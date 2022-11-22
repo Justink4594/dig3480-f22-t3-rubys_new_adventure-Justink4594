@@ -33,6 +33,7 @@ public class RubyController : MonoBehaviour
     public static int level = 0;
 
     public int cogs = 4;
+    public GameObject Cogs;
 
     Animator animator;
     Vector2 lookDirection = new Vector2(1, 0);
@@ -61,6 +62,7 @@ public class RubyController : MonoBehaviour
         stage2winTextObject.SetActive(false);
 
         SetCountText();
+        SetCogsText();
     }
 
     void Update()
@@ -201,12 +203,18 @@ public class RubyController : MonoBehaviour
             }
     }
 
+    void SetCogsText()
+    {
+        Cogs.Text = "Cogs:" + cogs.ToString;
+    }
+
     void OnCollision2D(Collision collision)
     {
         if (collision.collider.tag == "Ammo")
         {
             Destroy(collision.collider.gameObject);
             cogs = cogs + 4;
+            SetCogsText();
         }
     }
 }
