@@ -203,6 +203,6 @@ public class RubyController : MonoBehaviour
 
     void OnTriggerEnter2D(collider other)
     {
-
+        
     }
 }
