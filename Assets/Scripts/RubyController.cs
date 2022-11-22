@@ -200,4 +200,6 @@ public class RubyController : MonoBehaviour
                 speed = 0;
             }
     }
+
+    void OnTriggerEnter2D
 }
