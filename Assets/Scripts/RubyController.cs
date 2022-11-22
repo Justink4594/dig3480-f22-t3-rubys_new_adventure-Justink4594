@@ -30,7 +30,7 @@ public class RubyController : MonoBehaviour
 
     public int count;
     public static int RFixed;
-    public static int level;
+    public static bool level;
 
     Animator animator;
     Vector2 lookDirection = new Vector2(1, 0);
