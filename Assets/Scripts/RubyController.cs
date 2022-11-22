@@ -33,7 +33,7 @@ public class RubyController : MonoBehaviour
     public static int level = 0;
 
     public int cogs = 4;
-    public GameObject Cogs;
+    public GameObject cogsTextObject;
 
     Animator animator;
     Vector2 lookDirection = new Vector2(1, 0);
@@ -205,7 +205,7 @@ public class RubyController : MonoBehaviour
 
     void SetCogsText()
     {
-        Cogs.Text = "Cogs:" + cogs;
+        cogsTextObject.Text = "Cogs:" + cogs;
     }
 
     void OnCollision2D(Collision collision)
