@@ -186,6 +186,7 @@ public class RubyController : MonoBehaviour
         if (RFixed >= 6)
         {
             winTextObject.SetActive(true);
+            level = true;
         }
         if (RFixed >= 10)
         {
