@@ -41,6 +41,7 @@ public class RubyController : MonoBehaviour
     public TextMeshProUGUI countText;
     public GameObject winTextObject;
     public GameObject gameoverTextObject;
+    public GameObject stage2winTextObject;
     bool gameOver;
 
     void Start()
@@ -187,5 +188,6 @@ public class RubyController : MonoBehaviour
             music.gameObject.SetActive(false);
 
         }
+        if (RFixed >= 10)
     }
 }
