@@ -30,7 +30,7 @@ public class RubyController : MonoBehaviour
 
     public int count;
     public static int RFixed;
-    public static int level;
+    public static bool level;
 
     Animator animator;
     Vector2 lookDirection = new Vector2(1, 0);
@@ -50,7 +50,7 @@ public class RubyController : MonoBehaviour
         rigidbody2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
 
-        level = 0;
+        level = false;
         currentHealth = maxHealth;
         RFixed = 0;
         gameOver = false;
@@ -102,7 +102,7 @@ public class RubyController : MonoBehaviour
                 if (RFixed == 6)
                 {
                     SceneManager.LoadScene("Stage2");
-                    level += 1;
+                    level = true;
                 }
 
                 else if (character != null)
@@ -120,21 +120,6 @@ public class RubyController : MonoBehaviour
             }
 
         }
-        if (level != 1)
-            if (RFixed >= 6)
-            {
-                winTextObject.SetActive(true);
-            }
-
-        if (level == 1)
-            if (RFixed >= 4)
-            {
-                stage2winTextObject.SetActive(true);
-                gameOver = true;
-                isInvincible = true;
-                PlaySound(win);
-                music.gameObject.SetActive(false);
-            }
     }
 
     void FixedUpdate()
@@ -198,5 +183,17 @@ public class RubyController : MonoBehaviour
     void SetCountText()
     {
         countText.text = "Robots Fixed:" + RFixed;
+        if (RFixed >= 6)
+        {
+            winTextObject.SetActive(true);
+        }
+        if (RFixed >= 10)
+        {
+            stage2winTextObject.SetActive(true);
+            gameOver = true;
+            isInvincible = true;
+            PlaySound(win);
+            music.gameObject.SetActive(false);
+        }
     }
 }
