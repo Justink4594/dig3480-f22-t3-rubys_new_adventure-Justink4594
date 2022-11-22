@@ -185,7 +185,7 @@ public class RubyController : MonoBehaviour
         {
             winTextObject.SetActive(true);
         }
-        if (RFixed >= 4) &(level = true)
+        if (RFixed >= 4)
         {
             stage2winTextObject.SetActive(true);
             gameOver = true;
