@@ -181,11 +181,11 @@ public class RubyController : MonoBehaviour
     void SetCountText()
     {
         countText.text = "Robots Fixed:" + RFixed;
-        if (RFixed >= 6 && level = false)
+        if (RFixed >= 6) &(level = false)
         {
             winTextObject.SetActive(true);
         }
-        if (RFixed >= 4 && (level = true)
+        if (RFixed >= 4) &(level = true)
         {
             stage2winTextObject.SetActive(true);
             gameOver = true;
