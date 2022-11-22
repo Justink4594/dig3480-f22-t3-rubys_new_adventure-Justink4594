@@ -30,7 +30,7 @@ public class RubyController : MonoBehaviour
 
     public int count;
     public static int RFixed;
-    public static int level;
+    public static int level = 0;
 
     Animator animator;
     Vector2 lookDirection = new Vector2(1, 0);
@@ -50,7 +50,6 @@ public class RubyController : MonoBehaviour
         rigidbody2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
 
-        level = 0;
         currentHealth = maxHealth;
         RFixed = 0;
         gameOver = false;
