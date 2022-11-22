@@ -99,6 +99,10 @@ public class RubyController : MonoBehaviour
                 {
                     character.DisplayDialog();
                 }
+            if (RFixed == 6)
+            {
+                
+            }
             }
         }
 
