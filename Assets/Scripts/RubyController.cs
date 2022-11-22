@@ -183,10 +183,11 @@ public class RubyController : MonoBehaviour
     void SetCountText()
     {
         countText.text = "Robots Fixed:" + RFixed;
-        if (RFixed >= 6)
-        {
+        if(level != 1)
+            if(RFixed >= 6)
+            {
             winTextObject.SetActive(true);
-        }
+            }
 
         if (RFixed >= 10)
         {
