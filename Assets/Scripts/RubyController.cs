@@ -201,8 +201,12 @@ public class RubyController : MonoBehaviour
             }
     }
 
-    void OnCollision2D(collider other)
+    void OnCollision2D(Collision collision)
     {
-        
+        if (collision.collider.tag == "Ammo")
+        {
+            Destroy(collision.collider.gameObject);
+            cogs = cogs + 4;
+        }
     }
 }
