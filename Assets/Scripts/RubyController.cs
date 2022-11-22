@@ -102,7 +102,6 @@ public class RubyController : MonoBehaviour
                 if (RFixed == 6)
                 {
                     SceneManager.LoadScene("Stage2");
-                    level += 1;
                 }
 
                 else if (character != null)
