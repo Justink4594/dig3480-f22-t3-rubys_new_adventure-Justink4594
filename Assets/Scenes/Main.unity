@@ -16632,7 +16632,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1311742540}
   - component: {fileID: 1311742539}
-  - component: {fileID: 1311742541}
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
@@ -16650,7 +16649,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: e406c04157c663a43b859646b7ad3c2a, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.3
   m_Pitch: 1
@@ -16751,22 +16750,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1311742541
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1311742538}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 808f6b187874e5748ba5522fad15153c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  starting: {fileID: 8300000, guid: e406c04157c663a43b859646b7ad3c2a, type: 3}
-  Victory: {fileID: 8300000, guid: 9d4d886ea9e1cac4c9d2c75967346799, type: 3}
-  Defeat: {fileID: 8300000, guid: bc9174580ea99d041be0ee9721107b0b, type: 3}
-  musicSource: {fileID: 1727795674}
 --- !u!1001 &1317245037
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19340,9 +19323,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3103036107559007923, guid: bfcd5a0fa6614ac46a159a152daf3119, type: 3}
+      propertyPath: win
+      value: 
+      objectReference: {fileID: 8300000, guid: 817c748367723154e9a2b0ca1c457cb2, type: 3}
+    - target: {fileID: 3103036107559007923, guid: bfcd5a0fa6614ac46a159a152daf3119, type: 3}
+      propertyPath: lose
+      value: 
+      objectReference: {fileID: 8300000, guid: bc9174580ea99d041be0ee9721107b0b, type: 3}
+    - target: {fileID: 3103036107559007923, guid: bfcd5a0fa6614ac46a159a152daf3119, type: 3}
       propertyPath: count
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3103036107559007923, guid: bfcd5a0fa6614ac46a159a152daf3119, type: 3}
+      propertyPath: music
+      value: 
+      objectReference: {fileID: 1311742538}
     - target: {fileID: 3103036107559007923, guid: bfcd5a0fa6614ac46a159a152daf3119, type: 3}
       propertyPath: Defeat
       value: 
@@ -19380,6 +19375,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1727795674}
     - target: {fileID: 3103036107559007923, guid: bfcd5a0fa6614ac46a159a152daf3119, type: 3}
+      propertyPath: playerSteps
+      value: 
+      objectReference: {fileID: 8300000, guid: a20c77ecd5de9eb4a98731b45ad84c3e, type: 3}
+    - target: {fileID: 3103036107559007923, guid: bfcd5a0fa6614ac46a159a152daf3119, type: 3}
       propertyPath: winTextObject
       value: 
       objectReference: {fileID: 2040419695}
@@ -19414,6 +19413,10 @@ PrefabInstance:
     - target: {fileID: 7804104524034610529, guid: bfcd5a0fa6614ac46a159a152daf3119, type: 3}
       propertyPath: playOnAwake
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8255318926675020766, guid: bfcd5a0fa6614ac46a159a152daf3119, type: 3}
+      propertyPath: m_Volume
+      value: 0.15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bfcd5a0fa6614ac46a159a152daf3119, type: 3}
