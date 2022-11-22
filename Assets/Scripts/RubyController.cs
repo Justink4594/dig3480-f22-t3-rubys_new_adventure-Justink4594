@@ -195,6 +195,7 @@ public class RubyController : MonoBehaviour
                 isInvincible = true;
                 PlaySound(win);
                 music.gameObject.SetActive(false);
+                speed = 0;
             }
     }
 }
