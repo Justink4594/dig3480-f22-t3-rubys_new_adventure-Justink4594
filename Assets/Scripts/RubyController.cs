@@ -30,7 +30,7 @@ public class RubyController : MonoBehaviour
 
     public int count;
     public static int RFixed;
-    public static bool level;
+    public static int level;
 
     Animator animator;
     Vector2 lookDirection = new Vector2(1, 0);
@@ -50,7 +50,7 @@ public class RubyController : MonoBehaviour
         rigidbody2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
 
-        level = false;
+        level = 0;
         currentHealth = maxHealth;
         RFixed = 0;
         gameOver = false;
@@ -102,7 +102,7 @@ public class RubyController : MonoBehaviour
                 if (RFixed == 6)
                 {
                     SceneManager.LoadScene("Stage2");
-                    level = true;
+                    level += 1;
                 }
 
                 else if (character != null)
