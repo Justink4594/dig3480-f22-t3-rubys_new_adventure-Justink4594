@@ -120,6 +120,21 @@ public class RubyController : MonoBehaviour
             }
 
         }
+        if (level != 1)
+            if (RFixed >= 6)
+            {
+                winTextObject.SetActive(true);
+            }
+
+        if (level == 1)
+            if (RFixed >= 4)
+            {
+                stage2winTextObject.SetActive(true);
+                gameOver = true;
+                isInvincible = true;
+                PlaySound(win);
+                music.gameObject.SetActive(false);
+            }
     }
 
     void FixedUpdate()
@@ -183,20 +198,5 @@ public class RubyController : MonoBehaviour
     void SetCountText()
     {
         countText.text = "Robots Fixed:" + RFixed;
-        if (level != 1)
-            if (RFixed >= 6)
-            {
-                winTextObject.SetActive(true);
-            }
-
-        if (level == 1)
-            if (RFixed >= 4)
-            {
-                stage2winTextObject.SetActive(true);
-                gameOver = true;
-                isInvincible = true;
-                PlaySound(win);
-                music.gameObject.SetActive(false);
-            }
     }
 }
