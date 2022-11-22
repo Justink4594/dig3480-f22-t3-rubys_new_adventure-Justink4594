@@ -182,12 +182,14 @@ public class RubyController : MonoBehaviour
         if (RFixed >= 6)
         {
             winTextObject.SetActive(true);
+        }
+        if (RFixed >= 10)
+        {
+            stage2winTextObject.SetActive(true);
             gameOver = true;
             isInvincible = true;
             PlaySound(win);
             music.gameObject.SetActive(false);
-
         }
-        if (RFixed >= 10)
     }
 }
