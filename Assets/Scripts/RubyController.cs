@@ -213,7 +213,7 @@ public class RubyController : MonoBehaviour
     {
         if (collision.collider.tag == "Ammo")
         {
-            Destroy(collision.collider.gameObject);
+            Destroy(gameObject);
             cogs = cogs + 4;
             SetcogsText();
         }
