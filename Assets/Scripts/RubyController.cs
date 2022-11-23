@@ -204,9 +204,9 @@ public class RubyController : MonoBehaviour
             }
     }
 
-    void SetcogsText()
+    void SetAmmoText()
     {
-        cogsText.text = "Cogs:" + cogs;
+        ammoText.text = "Cogs:" + Cogs;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -214,8 +214,8 @@ public class RubyController : MonoBehaviour
         if (other.gameObject.CompareTag("Ammo"))
         {
             other.gameObject.SetActive(false);
-            cogs += 4;
-            SetcogsText();
+            Cogs += 4;
+            SetAmmoText();
         }
     }
 }
