@@ -216,8 +216,6 @@ public class RubyController : MonoBehaviour
             Destroy(gameObject);
             cogs += 4;
             SetcogsText();
-
-
         }
     }
 }
