@@ -209,7 +209,7 @@ public class RubyController : MonoBehaviour
         cogsText.text = "Cogs:" + cogs;
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Ammo"))
         {
