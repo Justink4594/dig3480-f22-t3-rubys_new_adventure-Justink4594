@@ -208,14 +208,4 @@ public class RubyController : MonoBehaviour
     {
         cogsText.text = "Cogs:" + cogs;
     }
-
-    void OnCollisionEnter2D(Collision2D other)
-    {
-        if (collision.collider.tag == "Ammo")
-        {
-            Destroy(collision.collider.gameObject);
-            cogs = cogs + 4;
-            SetcogsText();
-        }
-    }
 }
