@@ -41,7 +41,6 @@ public class RubyController : MonoBehaviour
     public GameObject HealthIncrease;
     public GameObject HealthDecrease;
     public GameObject projectilePrefab;
-    public GameObject CollectibleAmmo;
 
     public TextMeshProUGUI countText;
     public GameObject winTextObject;
