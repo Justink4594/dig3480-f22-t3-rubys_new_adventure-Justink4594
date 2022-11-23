@@ -205,7 +205,7 @@ public class RubyController : MonoBehaviour
 
     void SetcogsText()
     {
-        cogsText.Text = "Cogs:" + cogs;
+        cogsText.text = "Cogs:" + cogs;
     }
 
     void OnCollision2D(Collision collision)
