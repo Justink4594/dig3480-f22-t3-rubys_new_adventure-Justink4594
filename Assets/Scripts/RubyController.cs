@@ -211,6 +211,14 @@ public class RubyController : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        
+        if (other.gameObject.CompareTag("Ammo"))
+        {
+            if (gameOver = false)
+            {
+                cogs += 4;
+                SetcogsText();
+                other.gameObject.SetActive(false);
+            }
+        }
     }
 }
