@@ -213,12 +213,11 @@ public class RubyController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Ammo"))
         {
-            if (gameOver = false)
-            {
-                cogs += 4;
-                SetcogsText();
-                other.gameObject.SetActive(false);
-            }
+            Destroy(gameObject);
+            cogs += 4;
+            SetcogsText();
+
+
         }
     }
 }
