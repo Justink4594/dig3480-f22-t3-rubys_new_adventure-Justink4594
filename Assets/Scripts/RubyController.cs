@@ -63,7 +63,7 @@ public class RubyController : MonoBehaviour
         Cogs = 4;
 
         SetCountText();
-        SetcogsText();
+        SetAmmoText();
     }
 
     void Update()
