@@ -209,7 +209,7 @@ public class RubyController : MonoBehaviour
         cogsText.text = "Cogs:" + cogs;
     }
 
-    void OnTriggerEnter2D()
+    void OnTriggerEnter2D(Collider2D other)
     {
         
     }
