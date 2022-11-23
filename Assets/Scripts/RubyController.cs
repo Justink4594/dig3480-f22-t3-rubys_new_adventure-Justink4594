@@ -60,6 +60,7 @@ public class RubyController : MonoBehaviour
         winTextObject.SetActive(false);
         gameoverTextObject.SetActive(false);
         stage2winTextObject.SetActive(false);
+        cogsTextObject.SetActive(false);
 
         SetCountText();
         SetCogsText();
@@ -204,7 +205,7 @@ public class RubyController : MonoBehaviour
             }
     }
 
-    void SetCogsText()
+    void SetcogsText()
     {
         cogsTextObject.Text = "Cogs:" + cogs;
     }
@@ -215,7 +216,7 @@ public class RubyController : MonoBehaviour
         {
             Destroy(collision.collider.gameObject);
             cogs = cogs + 4;
-            SetCogsText();
+            SetcogsText();
         }
     }
 }
