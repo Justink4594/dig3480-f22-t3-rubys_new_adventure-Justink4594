@@ -107,7 +107,6 @@ public class RubyController : MonoBehaviour
                 {
                     SceneManager.LoadScene("Stage2");
                     level += 1;
-                    jambiText.SetActive(false);
                 }
 
                 else if (character != null)
@@ -207,7 +206,7 @@ public class RubyController : MonoBehaviour
 
     void SetcogsText()
     {
-        cogsTextObject.Text = "Cogs:" + cogs;
+        cogs.Text = "Cogs:" + cogs;
     }
 
     void OnCollision2D(Collision collision)
