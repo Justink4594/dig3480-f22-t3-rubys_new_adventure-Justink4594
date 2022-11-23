@@ -96,6 +96,7 @@ public class RubyController : MonoBehaviour
         {
             Launch();
             Cogs = Cogs - 1;
+            SetAmmoText();
         }
 
         if (Input.GetKeyDown(KeyCode.X))
