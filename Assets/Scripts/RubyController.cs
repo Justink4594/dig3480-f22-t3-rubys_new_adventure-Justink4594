@@ -33,7 +33,7 @@ public class RubyController : MonoBehaviour
     public static int level = 0;
 
     public int cogs = 4;
-    public GameObject cogsTextObject;
+    public TextMeshProUGUI cogsText;
 
     Animator animator;
     Vector2 lookDirection = new Vector2(1, 0);
@@ -60,7 +60,7 @@ public class RubyController : MonoBehaviour
         winTextObject.SetActive(false);
         gameoverTextObject.SetActive(false);
         stage2winTextObject.SetActive(false);
-        cogsTextObject.SetActive(false);
+        cogsText.SetActive(false);
 
         SetCountText();
         SetcogsText();
