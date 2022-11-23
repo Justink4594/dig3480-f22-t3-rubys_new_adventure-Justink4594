@@ -63,7 +63,7 @@ public class RubyController : MonoBehaviour
         cogsTextObject.SetActive(false);
 
         SetCountText();
-        SetCogsText();
+        SetcogsText();
     }
 
     void Update()
