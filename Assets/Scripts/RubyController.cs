@@ -208,4 +208,9 @@ public class RubyController : MonoBehaviour
     {
         cogsText.text = "Cogs:" + cogs;
     }
+
+    void OnTriggerEnter2D()
+    {
+        
+    }
 }
