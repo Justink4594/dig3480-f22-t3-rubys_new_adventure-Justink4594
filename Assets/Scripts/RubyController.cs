@@ -32,7 +32,7 @@ public class RubyController : MonoBehaviour
     public static int RFixed;
     public static int level = 0;
 
-    public int cogs = 4;
+    public int cogs;
     public TextMeshProUGUI cogsText;
 
     Animator animator;
@@ -60,6 +60,7 @@ public class RubyController : MonoBehaviour
         winTextObject.SetActive(false);
         gameoverTextObject.SetActive(false);
         stage2winTextObject.SetActive(false);
+        cogs = 4;
 
         SetCountText();
         SetcogsText();
