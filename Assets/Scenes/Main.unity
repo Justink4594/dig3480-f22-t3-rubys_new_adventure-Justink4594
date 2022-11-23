@@ -15408,6 +15408,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5911971473739185253, guid: a14227a4ad3448d4dbb193b2a871509d, type: 3}
   m_PrefabInstance: {fileID: 669083744}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &653880092 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6026470368710500492, guid: d3f83b57b633be04f9303cd8e979795c, type: 3}
+  m_PrefabInstance: {fileID: 1254319677325896469}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &669083744
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19850,6 +19855,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 9d4d886ea9e1cac4c9d2c75967346799, type: 3}
     - target: {fileID: 3103036107559007923, guid: bfcd5a0fa6614ac46a159a152daf3119, type: 3}
+      propertyPath: ammoText
+      value: 
+      objectReference: {fileID: 1556860450}
+    - target: {fileID: 3103036107559007923, guid: bfcd5a0fa6614ac46a159a152daf3119, type: 3}
       propertyPath: cogsText
       value: 
       objectReference: {fileID: 1556860450}
@@ -19897,6 +19906,10 @@ PrefabInstance:
       propertyPath: BackgroundMusic
       value: 
       objectReference: {fileID: 8300000, guid: e406c04157c663a43b859646b7ad3c2a, type: 3}
+    - target: {fileID: 3103036107559007923, guid: bfcd5a0fa6614ac46a159a152daf3119, type: 3}
+      propertyPath: CollectibleAmmo
+      value: 
+      objectReference: {fileID: 653880092}
     - target: {fileID: 3103036107559007923, guid: bfcd5a0fa6614ac46a159a152daf3119, type: 3}
       propertyPath: projectilePrefab
       value: 
