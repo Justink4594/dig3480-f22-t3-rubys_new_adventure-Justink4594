@@ -208,7 +208,7 @@ public class RubyController : MonoBehaviour
         cogsText.text = "Cogs:" + cogs;
     }
 
-    void OnCollision2D(Collision collision)
+    void OnCollisionEnter2D(Collision collision)
     {
         if (collision.collider.tag == "Ammo")
         {
