@@ -32,8 +32,8 @@ public class RubyController : MonoBehaviour
     public static int RFixed;
     public static int level = 0;
 
-    public int cogs;
-    public TextMeshProUGUI cogsText;
+    public int Cogs;
+    public TextMeshProUGUI ammoText;
 
     Animator animator;
     Vector2 lookDirection = new Vector2(1, 0);
@@ -60,7 +60,7 @@ public class RubyController : MonoBehaviour
         winTextObject.SetActive(false);
         gameoverTextObject.SetActive(false);
         stage2winTextObject.SetActive(false);
-        cogs = 4;
+        Cogs = 4;
 
         SetCountText();
         SetcogsText();
@@ -213,7 +213,7 @@ public class RubyController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Ammo"))
         {
-            Destroy(gameObject);
+            other.gameObject.SetActive(false);
             cogs += 4;
             SetcogsText();
         }
