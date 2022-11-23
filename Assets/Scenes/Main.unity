@@ -19850,6 +19850,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 9d4d886ea9e1cac4c9d2c75967346799, type: 3}
     - target: {fileID: 3103036107559007923, guid: bfcd5a0fa6614ac46a159a152daf3119, type: 3}
+      propertyPath: cogsText
+      value: 
+      objectReference: {fileID: 1556860450}
+    - target: {fileID: 3103036107559007923, guid: bfcd5a0fa6614ac46a159a152daf3119, type: 3}
       propertyPath: hitSound
       value: 
       objectReference: {fileID: 8300000, guid: 9b1bb1f450b7d444fa4a8019d13519a7, type: 3}
