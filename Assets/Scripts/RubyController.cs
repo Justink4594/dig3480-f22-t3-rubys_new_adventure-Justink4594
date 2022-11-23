@@ -95,6 +95,7 @@ public class RubyController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.C))
         {
             Launch();
+            Cogs = Cogs - 1;
         }
 
         if (Input.GetKeyDown(KeyCode.X))
