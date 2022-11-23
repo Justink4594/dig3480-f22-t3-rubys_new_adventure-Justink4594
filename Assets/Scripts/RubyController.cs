@@ -106,6 +106,7 @@ public class RubyController : MonoBehaviour
                 {
                     SceneManager.LoadScene("Stage2");
                     level += 1;
+                    jambiText.SetActive(false);
                 }
 
                 else if (character != null)
