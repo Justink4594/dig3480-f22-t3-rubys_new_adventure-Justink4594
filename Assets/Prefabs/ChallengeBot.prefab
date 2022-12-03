@@ -34,7 +34,7 @@ Transform:
   m_LocalScale: {x: 1.4575762, y: 1.4575762, z: 1.4575762}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 6892262380078213538}
+  - {fileID: 4020067122127537735}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -152,7 +152,7 @@ MonoBehaviour:
   speed: 3
   vertical: 0
   changeTime: 3
-  smokeEffect: {fileID: 3143628809720386034, guid: 4d3a4476efeca5244b46e8bd36e4939e, type: 3}
+  smokeEffect: {fileID: 1912056844111874153}
 --- !u!95 &6364298297640120082
 Animator:
   serializedVersion: 4
@@ -269,7 +269,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1001 &6432421813754525310
+--- !u!1001 &3542244034811910555
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -282,27 +282,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 496154145445011420, guid: 4d3a4476efeca5244b46e8bd36e4939e, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.3624
+      value: 1.2563
       objectReference: {fileID: 0}
     - target: {fileID: 496154145445011420, guid: 4d3a4476efeca5244b46e8bd36e4939e, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.3624
+      value: 1.2563
       objectReference: {fileID: 0}
     - target: {fileID: 496154145445011420, guid: 4d3a4476efeca5244b46e8bd36e4939e, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.3624
+      value: 1.2563
       objectReference: {fileID: 0}
     - target: {fileID: 496154145445011420, guid: 4d3a4476efeca5244b46e8bd36e4939e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.022
+      value: -0.01
       objectReference: {fileID: 0}
     - target: {fileID: 496154145445011420, guid: 4d3a4476efeca5244b46e8bd36e4939e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.577
+      value: 1.57
       objectReference: {fileID: 0}
     - target: {fileID: 496154145445011420, guid: 4d3a4476efeca5244b46e8bd36e4939e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.653
+      value: -0.65
       objectReference: {fileID: 0}
     - target: {fileID: 496154145445011420, guid: 4d3a4476efeca5244b46e8bd36e4939e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -338,8 +338,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d3a4476efeca5244b46e8bd36e4939e, type: 3}
---- !u!4 &6892262380078213538 stripped
+--- !u!198 &1912056844111874153 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 3143628809720386034, guid: 4d3a4476efeca5244b46e8bd36e4939e, type: 3}
+  m_PrefabInstance: {fileID: 3542244034811910555}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &4020067122127537735 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 496154145445011420, guid: 4d3a4476efeca5244b46e8bd36e4939e, type: 3}
-  m_PrefabInstance: {fileID: 6432421813754525310}
+  m_PrefabInstance: {fileID: 3542244034811910555}
   m_PrefabAsset: {fileID: 0}

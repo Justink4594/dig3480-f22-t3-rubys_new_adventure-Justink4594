@@ -17552,23 +17552,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3367896139160222724, guid: 67bef3ceea3388a4e8b0b9adf1e67868, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.56434864
+      value: 0.49451613
       objectReference: {fileID: 0}
     - target: {fileID: 3367896139160222724, guid: 67bef3ceea3388a4e8b0b9adf1e67868, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.56434864
+      value: 0.49451613
       objectReference: {fileID: 0}
     - target: {fileID: 3367896139160222724, guid: 67bef3ceea3388a4e8b0b9adf1e67868, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.56434864
+      value: 0.49451613
       objectReference: {fileID: 0}
     - target: {fileID: 3367896139160222724, guid: 67bef3ceea3388a4e8b0b9adf1e67868, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.22
+      value: -6.69
       objectReference: {fileID: 0}
     - target: {fileID: 3367896139160222724, guid: 67bef3ceea3388a4e8b0b9adf1e67868, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.68
+      value: 0.52
       objectReference: {fileID: 0}
     - target: {fileID: 3367896139160222724, guid: 67bef3ceea3388a4e8b0b9adf1e67868, type: 3}
       propertyPath: m_LocalPosition.z
@@ -20929,6 +20929,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 813276867562099626, guid: 7e1ea9d40f6e8c24dbad5473f737676b, type: 3}
   m_PrefabInstance: {fileID: 6310545431504655270}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6364298299345326192
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6364298297640120080, guid: ebf64c8914cb5fb488aedee8844cb579, type: 3}
+      propertyPath: m_Name
+      value: ChallengeBot
+      objectReference: {fileID: 0}
+    - target: {fileID: 6364298297640120087, guid: ebf64c8914cb5fb488aedee8844cb579, type: 3}
+      propertyPath: m_RootOrder
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 6364298297640120087, guid: ebf64c8914cb5fb488aedee8844cb579, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 6364298297640120087, guid: ebf64c8914cb5fb488aedee8844cb579, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 6364298297640120087, guid: ebf64c8914cb5fb488aedee8844cb579, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6364298297640120087, guid: ebf64c8914cb5fb488aedee8844cb579, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6364298297640120087, guid: ebf64c8914cb5fb488aedee8844cb579, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6364298297640120087, guid: ebf64c8914cb5fb488aedee8844cb579, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6364298297640120087, guid: ebf64c8914cb5fb488aedee8844cb579, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6364298297640120087, guid: ebf64c8914cb5fb488aedee8844cb579, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6364298297640120087, guid: ebf64c8914cb5fb488aedee8844cb579, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6364298297640120087, guid: ebf64c8914cb5fb488aedee8844cb579, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ebf64c8914cb5fb488aedee8844cb579, type: 3}
 --- !u!1001 &6850811585462350576
 PrefabInstance:
   m_ObjectHideFlags: 0
