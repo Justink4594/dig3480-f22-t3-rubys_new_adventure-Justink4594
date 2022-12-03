@@ -10,6 +10,7 @@ public class ChallengeBot : MonoBehaviour
     public ParticleSystem smokeEffect;
     public static int health = 2;
     public int challengeNumber;
+    public int count = 1;
 
     Rigidbody2D rigidbody2D;
     float timer;
@@ -29,6 +30,7 @@ public class ChallengeBot : MonoBehaviour
     }
     void Update()
     {
+        challengeNumber = health;
         //remember ! inverse the test, so if broken is true !broken will be false and return won’t be executed.
         if (!broken)
         {
