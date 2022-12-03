@@ -9,7 +9,7 @@ public class RubyController : MonoBehaviour
     Rigidbody2D rigidbody2d;
     float horizontal;
     float vertical;
-    public float speed = 3.0f;
+    public float speed = 4.5f;
     public int maxHealth = 5;
     public float timeInvincible = 2.0f;
     bool isInvincible;
@@ -229,6 +229,6 @@ public class RubyController : MonoBehaviour
 
     public void ChangeSpeed()
     {
-        speed = 1.0f;
+        speed = 2.5f;
     }
 }
