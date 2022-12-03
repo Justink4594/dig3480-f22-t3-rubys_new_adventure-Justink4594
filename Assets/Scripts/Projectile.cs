@@ -30,7 +30,7 @@ public class Projectile : MonoBehaviour
     {
         EnemyController e = other.collider.GetComponent<EnemyController>();
         HardEnemyController o = other.collider.GetComponent<HardEnemyController>();
-        
+        ChallengeBot c = other.collider.GetComponent<ChallengeBot>();
         if (e != null)
         {
             e.Fix();
@@ -41,6 +41,14 @@ public class Projectile : MonoBehaviour
         if (o != null)
         {
             o.Fix();
+            RubyController.RFixed += 1;
+        }
+
+        Destroy(gameObject);
+
+        if (c != null)
+        {
+            c.Fix();
             RubyController.RFixed += 1;
         }
 
