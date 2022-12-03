@@ -225,15 +225,12 @@ public class RubyController : MonoBehaviour
             SetAmmoText();
             PlaySound(cogsound);
         }
-    }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    
-        if(other.gameObject.CompareTag("Powerup"))
+        if (other.gameObject.CompareTag("Powerup"))
         {
             other.gameObject.SetActive(false);
-            speed = 
+            speed = 6.0f;
         }
+    }
 
     public void ChangeSpeed()
     {
