@@ -226,4 +226,9 @@ public class RubyController : MonoBehaviour
             PlaySound(cogsound);
         }
     }
+
+    public void ChangeSpeed()
+    {
+        speed = 1.0f;
+    }
 }

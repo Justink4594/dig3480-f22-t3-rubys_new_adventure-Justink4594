@@ -10,7 +10,7 @@ public class Shadow : MonoBehaviour
 
         if (controller != null)
         {
-            controller.speed(-1.0f);
+            controller.ChangeSpeed();
         }
     }
 }
