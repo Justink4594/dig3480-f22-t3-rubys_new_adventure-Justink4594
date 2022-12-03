@@ -23,6 +23,8 @@ public class RubyController : MonoBehaviour
     public AudioClip playerSteps;
     public AudioClip win;
     public AudioClip lose;
+    public AudioClip talk;
+    public AudioClip cogsound;
     public GameObject music;
 
     public int health { get { return currentHealth; } }
