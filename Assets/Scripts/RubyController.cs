@@ -197,6 +197,7 @@ public class RubyController : MonoBehaviour
             if (RFixed >= 6)
             {
                 winTextObject.SetActive(true);
+                PlaySound(talk);
             }
         if (level == 1)
             if (RFixed >= 4)
