@@ -96,6 +96,8 @@ public class ChallengeBot : MonoBehaviour
         //optional if you added the fixed animation
         animator.SetTrigger("Fixed");
         smokeEffect.Stop();
+
+        RubyController.RFixed+= 1;
         }
     }
 }
