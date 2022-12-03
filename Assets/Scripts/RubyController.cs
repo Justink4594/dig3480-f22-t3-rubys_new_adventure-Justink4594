@@ -222,6 +222,7 @@ public class RubyController : MonoBehaviour
             other.gameObject.SetActive(false);
             Cogs += 4;
             SetAmmoText();
+            PlaySound(cogsound);
         }
     }
 }
