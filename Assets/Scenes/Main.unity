@@ -17089,7 +17089,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e406c04157c663a43b859646b7ad3c2a, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.3
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -20103,6 +20103,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: bc9174580ea99d041be0ee9721107b0b, type: 3}
     - target: {fileID: 3103036107559007923, guid: bfcd5a0fa6614ac46a159a152daf3119, type: 3}
+      propertyPath: talk
+      value: 
+      objectReference: {fileID: 8300000, guid: 9f005ce248a76364b8807467dceb53ab, type: 3}
+    - target: {fileID: 3103036107559007923, guid: bfcd5a0fa6614ac46a159a152daf3119, type: 3}
       propertyPath: count
       value: 0
       objectReference: {fileID: 0}
@@ -20126,6 +20130,10 @@ PrefabInstance:
       propertyPath: cogsText
       value: 
       objectReference: {fileID: 1556860450}
+    - target: {fileID: 3103036107559007923, guid: bfcd5a0fa6614ac46a159a152daf3119, type: 3}
+      propertyPath: cogsound
+      value: 
+      objectReference: {fileID: 8300000, guid: 7998398201cf7e54380a741bb40e3bf7, type: 3}
     - target: {fileID: 3103036107559007923, guid: bfcd5a0fa6614ac46a159a152daf3119, type: 3}
       propertyPath: hitSound
       value: 
