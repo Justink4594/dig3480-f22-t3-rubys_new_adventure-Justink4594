@@ -229,6 +229,6 @@ public class RubyController : MonoBehaviour
 
     public void ChangeSpeed()
     {
-        speed = speed - 0.5f;
+        speed = 1.5f;
     }
 }
