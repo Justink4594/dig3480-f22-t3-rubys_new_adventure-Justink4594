@@ -227,6 +227,8 @@ public class RubyController : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2
+
     public void ChangeSpeed()
     {
         speed = 1.75f;
