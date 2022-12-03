@@ -9,6 +9,7 @@ public class ChallengeBot : MonoBehaviour
     public float changeTime = 3.0f;
     public ParticleSystem smokeEffect;
     public static int health = 2;
+    public int challengeNumber;
 
     Rigidbody2D rigidbody2D;
     float timer;
