@@ -82,10 +82,17 @@ public class ChallengeBot : MonoBehaviour
     //Public because we want to call it from elsewhere like the projectile script
     public void Fix()
     {
+        if(health>0)
+        {
+            health --;
+        }
+        else
+        {
         broken = false;
         rigidbody2D.simulated = false;
         //optional if you added the fixed animation
         animator.SetTrigger("Fixed");
         smokeEffect.Stop();
+        }
     }
 }
