@@ -8,12 +8,12 @@ public class ChallengeBot : MonoBehaviour
     public bool vertical;
     public float changeTime = 3.0f;
     public ParticleSystem smokeEffect;
+    public static int health = 2;
 
     Rigidbody2D rigidbody2D;
     float timer;
     int direction = 1;
     bool broken = true;
-    public int health = 3;
 
     Animator animator;
 
