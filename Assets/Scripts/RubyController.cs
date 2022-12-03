@@ -114,6 +114,7 @@ public class RubyController : MonoBehaviour
                 {
                     SceneManager.LoadScene("Stage2");
                     level += 1;
+                    PlaySound(talk);
                 }
 
                 else if (character != null)
