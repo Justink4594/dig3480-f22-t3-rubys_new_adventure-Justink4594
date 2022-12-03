@@ -227,7 +227,13 @@ public class RubyController : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2
+    private void OnTriggerEnter2D(Collider2D other)
+    
+        if(other.gameObject.CompareTag("Powerup"))
+        {
+            other.gameObject.SetActive(false);
+            speed = 
+        }
 
     public void ChangeSpeed()
     {
