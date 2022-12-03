@@ -13,6 +13,7 @@ public class ChallengeBot : MonoBehaviour
     float timer;
     int direction = 1;
     bool broken = true;
+    public int health = 3;
 
     Animator animator;
 
