@@ -72,7 +72,7 @@ public class ChallengeRobot : MonoBehaviour
 
         if (player != null)
         {
-            player.ChangeHealth(-3 );
+            player.ChangeHealth(-3);
         }
     }
 
